@@ -46,7 +46,7 @@ public class logInOutAction extends baseAction {
         }
         Map session = ActionContext.getContext().getSession();
         session.put("userId", userId);
-        if (ret.equals("N")){
+        if (ret.equals("USER")){
             return "user";
         } else {
             return "admin";
