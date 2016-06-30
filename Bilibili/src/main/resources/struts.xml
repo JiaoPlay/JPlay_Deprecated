@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+    <constant name="struts.multipart.maxSize" value="1073741824"/>
+
+    <package name="Bilibili" extends="json-default" >
+        <!-- File Upload -->
+        <action name="uploadTestAction" class="uploadTestAction" method="execute">
+            <result name="json"></result>
+            <interceptor-ref name="fileUpload">
+                <param name="maximumSize">1073741824</param>
+                <param name="allowedTypes">
+                    video/x-msvideo,video/x-dv,video/mp4,video/mpeg,video/mpeg,video/quicktime,video/x-ms-wmv,video/x-flv,video/x-matroska
+                </param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+
+        <!-- User -->
+        <action name="registerAction" class="com.action.registerAction" method="execute">
+            <result type="json"></result>
+        </action>
+    </package>
+
+</struts>

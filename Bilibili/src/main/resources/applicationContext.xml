@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- File Upload-->
+    <bean name="uploadTestAction" class="com.util.uploadHandler" scope="prototype"></bean>
+
+    <!-- User -->
+    <bean name="userDAO" class="com.dao.daoImpl.userDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="userService" class="com.service.serviceImpl.userServiceImpl">
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
+    
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/bilibili"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value=""></property>
+        <property name="maxActive" value="100"></property>
+        <property name="defaultAutoCommit" value="true"></property>
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/bilibili</prop>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+            </props>
+        </property>
+
+        <property name="configLocation">
+            <!--<value>hibernate.cfg.xml</value>-->
+            <value>classpath:/hibernate.cfg.xml</value>
+        </property>
+
+        <property name="mappingResources">
+            <list>
+                <value>Authority.hbm.xml</value>
+                <value>Category.hbm.xml</value>
+                <value>Comment.hbm.xml</value>
+                <value>CommentReply.hbm.xml</value>
+                <value>CommentReport.hbm.xml</value>
+                <value>FavoriteGroup.hbm.xml</value>
+                <value>Follow.hbm.xml</value>
+                <value>GroupPost.hbm.xml</value>
+                <value>InterestgroupUser.hbm.xml</value>
+                <value>Interestsgroup.hbm.xml</value>
+                <value>Letter.hbm.xml</value>
+                <value>Post.hbm.xml</value>
+                <value>Reply.hbm.xml</value>
+                <value>ReplyPost.hbm.xml</value>
+                <value>ReplyReport.hbm.xml</value>
+                <value>Role.hbm.xml</value>
+                <value>RoleAuthority.hbm.xml</value>
+                <value>Series.hbm.xml</value>
+                <value>SeriesVideo.hbm.xml</value>
+                <value>Subcategory.hbm.xml</value>
+                <value>Subscribe.hbm.xml</value>
+                <value>Tag.hbm.xml</value>
+                <value>TagVideo.hbm.xml</value>
+                <value>User.hbm.xml</value>
+                <value>UserComment.hbm.xml</value>
+                <value>UserPost.hbm.xml</value>
+                <value>UserReply.hbm.xml</value>
+                <value>UserRole.hbm.xml</value>
+                <value>Video.hbm.xml</value>
+                <value>VideoComment.hbm.xml</value>
+                <value>VideoFavorite.hbm.xml</value>
+                <value>VideoReport.hbm.xml</value>
+                <value>VideoSubcategory.hbm.xml</value>
+                <value>VideoUper.hbm.xml</value>
+            </list>
+        </property>
+
+    </bean>
+</beans>
