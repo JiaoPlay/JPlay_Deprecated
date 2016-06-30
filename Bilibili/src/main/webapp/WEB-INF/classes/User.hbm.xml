@@ -23,8 +23,11 @@
         <property name="signature">
             <column name="signature" sql-type="varchar(200)" length="200" not-null="true"/>
         </property>
+        <property name="phoneNumber">
+            <column name="phone_number" sql-type="varchar(50)" not-null="true"/>
+        </property>
         <property name="email">
-            <column name="email" sql-type="varbinary(50)" not-null="true"/>
+            <column name="email" sql-type="varchar(50)" not-null="true"/>
         </property>
         <property name="birthday">
             <column name="birthday" sql-type="date" not-null="true"/>
