@@ -2,75 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ade76e6-f3e0-4e4f-a50d-f4e79e5759dd" name="Default" comment="2016-6-28 18:54 Web Template Added.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/action/logInOutAction.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/action/logInOutAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/categoryDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/categoryDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/commentDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/commentDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/interestsgroupDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/interestsgroupDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/postDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/postDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/replyDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/replyDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/roleDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/roleDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/seriesDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/seriesDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/subcategoryDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/subcategoryDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/tagDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/tagDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/userDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/userDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/videoDAOImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/videoDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/userDAO.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/dao/userDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/pojo/User.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/pojo/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/service/serviceImpl/userServiceImpl.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/service/serviceImpl/userServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/service/userService.class" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/service/userService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/action/logInOutAction.class" afterPath="$PROJECT_DIR$/target/classes/com/action/logInOutAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/categoryDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/categoryDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/commentDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/commentDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/interestsgroupDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/interestsgroupDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/postDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/postDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/replyDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/replyDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/roleDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/roleDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/seriesDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/seriesDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/subcategoryDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/subcategoryDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/tagDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/tagDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/userDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/userDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/videoDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/daoImpl/videoDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dao/userDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/dao/userDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/com/pojo/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/service/serviceImpl/userServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/service/serviceImpl/userServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/service/userService.class" afterPath="$PROJECT_DIR$/target/classes/com/service/userService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili.iml" afterPath="$PROJECT_DIR$/Bilibili.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/action/logInOutAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/action/logInOutAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/categoryDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/categoryDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/commentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/commentDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/categoryDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/categoryDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/commentDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/commentDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/interestsgroupDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/interestsgroupDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/postDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/postDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/replyDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/replyDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/roleDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/roleDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/seriesDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/seriesDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/subcategoryDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/subcategoryDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/tagDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/tagDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/userDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/userDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/videoDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/daoImpl/videoDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/interestsgroupDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/interestsgroupDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/postDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/postDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/replyDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/replyDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/roleDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/roleDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/seriesDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/seriesDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/subcategoryDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/subcategoryDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/tagDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/tagDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/userDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/userDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/videoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/videoDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/pojo/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/service/serviceImpl/userServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/service/serviceImpl/userServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/service/userService.java" afterPath="$PROJECT_DIR$/src/main/java/com/service/userService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/User.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/User.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/User.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/User.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Authority.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Authority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Category.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Category.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Comment.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Comment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/CommentReply.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/CommentReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/CommentReport.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/CommentReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/FavoriteGroup.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/FavoriteGroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Follow.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Follow.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/GroupPost.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/GroupPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/InterestgroupUser.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/InterestgroupUser.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Interestsgroup.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Interestsgroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Letter.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Letter.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Post.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Post.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Reply.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Reply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/ReplyPost.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/ReplyPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/ReplyReport.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/ReplyReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Role.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Role.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/RoleAuthority.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/RoleAuthority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Series.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Series.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/SeriesVideo.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/SeriesVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Subcategory.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Subcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Subscribe.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Subscribe.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Tag.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Tag.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/TagVideo.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/TagVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserComment.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserPost.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserReply.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserRole.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/UserRole.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Video.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Video.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoComment.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoFavorite.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoFavorite.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoReport.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoSubcategory.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoSubcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoUper.hbm.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/VideoUper.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Authority.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Authority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Category.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Category.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Comment.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Comment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/CommentReply.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/CommentReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/CommentReport.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/CommentReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/FavoriteGroup.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/FavoriteGroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Follow.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Follow.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/GroupPost.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/GroupPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/InterestgroupUser.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/InterestgroupUser.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Interestsgroup.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Interestsgroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Letter.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Letter.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Post.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Post.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Reply.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Reply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ReplyPost.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/ReplyPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ReplyReport.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/ReplyReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Role.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Role.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/RoleAuthority.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/RoleAuthority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Series.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Series.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SeriesVideo.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/SeriesVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Subcategory.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Subcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Subscribe.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Subscribe.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tag.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Tag.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TagVideo.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/TagVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UserComment.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/UserComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UserPost.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/UserPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UserReply.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/UserReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UserRole.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/UserRole.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Video.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/Video.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/VideoComment.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/VideoComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/VideoFavorite.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/VideoFavorite.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/VideoReport.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/VideoReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/VideoSubcategory.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/VideoSubcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/VideoUper.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/VideoUper.hbm.xml" />
     </list>
     <ignored path="FrameModel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,11 +96,9 @@
       <file leaf-file-name="postDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/daoImpl/postDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-              <folding>
-                <marker date="1467268184314" expanded="true" signature="144:191" ph="/**...*/" />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,23 +106,33 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
+            <state relative-caret-position="115">
               <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+            <state relative-caret-position="443">
+              <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
               <folding>
-                <marker date="1467200703242" expanded="false" signature="1564:1616" ph="..." />
-                <marker date="1467200703242" expanded="true" signature="1617:2009" ph="..." />
-                <marker date="1467200703242" expanded="true" signature="1736:1998" ph="..." />
+                <marker date="1467285790059" expanded="false" signature="1564:1616" ph="..." />
+                <marker date="1467285790059" expanded="true" signature="1617:2009" ph="..." />
+                <marker date="1467285790059" expanded="true" signature="1736:1998" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uploadVideo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery-file-upload/uploadVideo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +140,7 @@
       <file leaf-file-name="commentDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/commentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="391">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
@@ -142,28 +150,18 @@
       <file leaf-file-name="interestsgroupDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/interestsgroupDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="391">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="userDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/userDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="391">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -172,7 +170,7 @@
       <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="483">
               <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding />
             </state>
@@ -185,7 +183,7 @@
       <file leaf-file-name="commentAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/action/commentAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="115">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
@@ -195,7 +193,7 @@
       <file leaf-file-name="categoryDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/categoryDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="207">
               <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
@@ -288,12 +286,18 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -320,6 +324,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -396,6 +402,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-file-upload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bilibili" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bilibili" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -436,9 +468,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,9 +491,12 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="927" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2835821" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.index.jsp">
-    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.561" ALTERNATIVE_JRE_ENABLED="false">
+  <component name="RunManager" selected="Tomcat Server.Bilibili">
+    <configuration default="false" name="Bilibili" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.56" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -1019,11 +1052,11 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Bilibili" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Bilibili" />
       </list>
     </recent_temporary>
   </component>
@@ -1075,6 +1108,7 @@
       <workItem from="1467271989488" duration="2908000" />
       <workItem from="1467284253741" duration="267000" />
       <workItem from="1467284683465" duration="497000" />
+      <workItem from="1467286025314" duration="1106000" />
     </task>
     <task id="LOCAL-00001" summary="2016-6-27 21:54 Action Template Added.">
       <created>1467035684157</created>
@@ -1087,44 +1121,44 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87728000" />
+    <option name="totallyTimeSpent" value="88834000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36568847" sideWeight="0.5021436" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2454448" sideWeight="0.6929674" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985553" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2165059" sideWeight="0.3860045" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2035139" sideWeight="0.6139955" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30699775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32731378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37471783" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985553" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2165059" sideWeight="0.3860045" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20310825" sideWeight="0.6139955" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14362273" sideWeight="0.18735892" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30699775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32731378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37537092" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1263,13 +1297,6 @@
         <state relative-caret-position="276">
           <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery-file-upload/uploadVideo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1439,9 +1466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-          <folding>
-            <marker date="1467256774467" expanded="true" signature="1312:1317" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,9 +1473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <marker date="1467256774470" expanded="true" signature="45:86" ph="/**...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1459,10 +1480,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <marker date="1467256774470" expanded="false" signature="41:112" ph="..." />
-            <marker date="1467256774470" expanded="true" signature="778:784" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1470,21 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#461#462#0" expanded="false" />
-            <element signature="e#497#498#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#575#576#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1492,13 +1495,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="161">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
@@ -1506,7 +1508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="483">
           <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding />
         </state>
@@ -1517,7 +1519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/action/commentAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="115">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
@@ -1525,33 +1527,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/categoryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="207">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/userDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/daoImpl/postDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <marker date="1467268184314" expanded="true" signature="144:191" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
+        <state relative-caret-position="115">
           <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
           <folding />
         </state>
@@ -1559,7 +1543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/commentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="391">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
@@ -1567,7 +1551,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/interestsgroupDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="391">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
@@ -1575,15 +1559,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+        <state relative-caret-position="443">
+          <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
           <folding>
-            <marker date="1467200703242" expanded="false" signature="1564:1616" ph="..." />
-            <marker date="1467200703242" expanded="true" signature="1617:2009" ph="..." />
-            <marker date="1467200703242" expanded="true" signature="1736:1998" ph="..." />
+            <marker date="1467285790059" expanded="false" signature="1564:1616" ph="..." />
+            <marker date="1467285790059" expanded="true" signature="1617:2009" ph="..." />
+            <marker date="1467285790059" expanded="true" signature="1736:1998" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery-file-upload/uploadVideo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/daoImpl/postDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/userDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>anti-chemical:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Struts 2 (Bilibili)|Struts 2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2835821" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>canvas-to-blob</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Bilibili</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2835821" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
