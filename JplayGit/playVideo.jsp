@@ -21,15 +21,15 @@
 <div class="col-xs-12">
     <nav class="navbar" role="navigation">
         <%--<div class="navbar-header">--%>
-        <%--<a href="index.jsp"><img src="img/logo.jpg" width="100px" height="100px"></a>--%>
+        <%--<a href="jHome.jsp"><img src="img/logo.jpg" width="100px" height="100px"></a>--%>
         <%--</div>--%>
         <div class="navbar-collapse collapse" id="navbar-collapse-01">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.jsp"><img src="img/logo.jpg" width="60px" height="60px"></a></li>
-                <li><a href="index.jsp">Home</a></li>
-                <li><a href="index.jsp">Subscription</a></li>
-                <li><a href="index.jsp">Column</a></li>
-                <li><a href="index.jsp">Profile</a></li>
+                <li><a href="jHome.jsp"><img src="img/logo.jpg" width="60px" height="60px"></a></li>
+                <li><a href="jHome.jsp">Home</a></li>
+                <li><a href="jHome.jsp">Subscription</a></li>
+                <li><a href="jHome.jsp">Column</a></li>
+                <li><a href="jHome.jsp">Profile</a></li>
                 <li><a href="#">User</a></li>
             </ul>
             <form class="navbar-form navbar-right" action="#" role="search">
