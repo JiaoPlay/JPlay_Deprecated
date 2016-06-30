@@ -65,7 +65,7 @@
                     <a href="index.jsp" class="logo"><img src="images/logo.png" /></a>
                     <ul class="social">
                         <li><a href="upload.jsp" title="Upload Video"><i class="fa fa-upload"></i>上传</a></li>
-                        <li><a href="logIn.jsp" title="Log in"><i class="fa fa-user"></i>登陆</a></li>
+                        <li><a href="login.jsp" title="Log in"><i class="fa fa-user"></i>登陆</a></li>
                         <li><a href="register.jsp" title="Register"><i class="fa fa-bell"></i>注册</a></li>
                     </ul>
                 </div>
@@ -98,9 +98,12 @@
                     <br/>
 
                     <div class="video">
-                        <div style="padding-top: 5%"></div>
-                        <span style="padding-left: 15%"></span>
-                        <button style="background-image: url(images/upload.jpg);width:70%;height:262px" ></button>
+                        <div style="padding-top: 13%"></div>
+                        <span style="padding-left: 45%"></span>
+                        <button></button>
+                        <div style="padding-top: 1%"></div>
+                        <span style="padding-left: 44%"></span>
+                        <label style="font-family: 微软雅黑">在这里上传你的视频</label>
                     </div>
                 </div>
             </div>
