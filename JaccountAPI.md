@@ -4,6 +4,6 @@
    * scope：basic, essential,profile
 
 ## 参考链接
-   * [oauth2相关文档说明](http://developer.sjtu.edu.cn/wiki/JAccount#OAuth2_.E5.9C.B0.E5.9D.80)
+   * [OAuth2相关文档说明](http://developer.sjtu.edu.cn/wiki/JAccount#OAuth2_.E5.9C.B0.E5.9D.80)
    * [获取用户信息接口](http://developer.sjtu.edu.cn/wiki/APIs#Profile)
    * [开发支持（仅供参考）](https://cwiki.apache.org/confluence/display/OLTU/OAuth%202.0%20Client%20Quickstart)
