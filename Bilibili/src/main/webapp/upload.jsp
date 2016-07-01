@@ -69,10 +69,27 @@
 
     <![endif]-->
 
+    <!-- Opacity -->
+    <style>
+        body {background: url("images/upload.jpg") no-repeat fixed center bottom;}
+        .upload{
+            color:#000;
+            background:rgba(255,255,255,0.6);
+            background: #ffffff 9;/*CSS Hack,只能对ie9以下浏览器ie6,ie7,ie8有效，否侧ie10,FF,Cherome会失去透明效果*/
+            filter:Alpha(opacity=60);/*只对ie7,ie8有效*/
+        }
+        .upload p,
+        .upload div,
+        .upload img {
+            position:relative;
+            /*或者是absolute，都可以使文字不透明，这样做还是为了
+            兼容ie9,ie8,ie7下背景透明而而背景上的文字不透明的效果*/
+        }
+    </style>
+
 </head>
 <body id="wrapper" >
 <div class="wrap-body">
-
     <!--////////////////////////////////////Header-->
     <header>
         <div class="wrap-header">
@@ -107,114 +124,55 @@
     <section id="container" class="index-page">
         <div class="wrap-container zerogrid">
             <div class="row">
-                <div class="logIn-content" class="col-2-3" style="height: 600px ">
-                    <h2>视频上传</h2>
-                    <hr/>
-                    <br/>
-                    <br/>
+                <div class="upload">
+                    <h2><strong>视频上传</strong></h2>
+                    <p>&nbsp;请在这里上传您的视频</p>
+                    <!-- The file upload form used as target for the file upload widget -->
+                    <form id="fileupload" action="uploadTestAction.action" method="POST" enctype="multipart/form-data">
+                        <!-- Redirect browsers with JavaScript disabled to the origin page -->
+                        <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
+                        <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+                        <div class="row fileupload-buttonbar">
+                            <div class="col-lg-7">
+                                <!-- The fileinput-button span is used to style the file input field as button -->
+                                <span class="btn btn-success fileinput-button">
+                                    <i class="glyphicon glyphicon-plus"></i>
 
-                    <div class="video">
-                    <div class="video">
-                        <div style="padding-top: 10%"></div>
-                        <span style="padding-left: 45%"></span>
-                        <button  class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"></button>
-                        <div style="padding-top: 1%"></div>
-                        <span style="padding-left: 44%"></span>
-                        <label style="font-family: 微软雅黑">在这里上传你的视频</label>
-                    </div>
+                                    <span>Add files...</span>
+                                    <input type="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
+                                </span>
+                                <button type="submit" class="btn btn-primary start">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                    <span>Start upload</span>
+                                </button>
+                                <button type="reset" class="btn btn-warning cancel">
+                                    <i class="glyphicon glyphicon-ban-circle"></i>
+                                    <span>Cancel upload</span>
+                                </button>
+                                <button type="button" class="btn btn-danger delete">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                    <span>Delete</span>
+                                </button>
+                                <input type="checkbox" class="toggle">
+                                <!-- The global file processing state -->
+                                <span class="fileupload-process"></span>
+                            </div>
+                            <!-- The global progress state -->
+                            <div class="col-lg-5 fileupload-progress fade">
+                                <!-- The global progress bar -->
+                                <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                </div>
+                                <!-- The extended global progress state -->
+                                <div class="progress-extended">&nbsp;</div>
+                            </div>
+                        </div>
+                        <!-- The table listing the files available for upload/download -->
+                        <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+                    </form>
                 </div>
-
-                        <!-- 模态框（Modal） -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="width:100%"
-                             aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close"
-                                                data-dismiss="modal" aria-hidden="true">
-                                            &times;
-                                        </button>
-                                        <h4 class="modal-title" id="myModalLabel">
-                                            视频上传
-                                        </h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>视频路径：  <!-- The file upload form used as target for the file upload widget -->
-                                        <div class="container">
-                                            <form id="fileupload" action="uploadTestAction.action" method="POST" enctype="multipart/form-data">
-                                                <!-- Redirect browsers with JavaScript disabled to the origin page -->
-                                                <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
-                                                <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-                                                <div class="row fileupload-buttonbar">
-                                                    <div class="col-lg-7">
-                                                        <!-- The fileinput-button span is used to style the file input field as button -->
-                                                        <span class="btn btn-success fileinput-button">
-                                                            <i class="glyphicon glyphicon-plus"></i>
-                                                            <span>Add files...</span>
-                                                            <input type="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
-                                                        </span>
-                                                        <button type="submit" class="btn btn-primary start">
-                                                            <i class="glyphicon glyphicon-upload"></i>
-                                                            <span>Start upload</span>
-                                                        </button>
-                                                        <button type="reset" class="btn btn-warning cancel">
-                                                            <i class="glyphicon glyphicon-ban-circle"></i>
-                                                            <span>Cancel upload</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger delete">
-                                                            <i class="glyphicon glyphicon-trash"></i>
-                                                            <span>Delete</span>
-                                                        </button>
-                                                        <input type="checkbox" class="toggle">
-                                                        <!-- The global file processing state -->
-                                                        <span class="fileupload-process"></span>
-                                                    </div>
-                                                    <!-- The global progress state -->
-                                                    <div class="col-lg-5 fileupload-progress fade">
-                                                        <!-- The global progress bar -->
-                                                        <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                                                            <div class="progress-bar progress-bar-success" style="width:0%;"></div>
-                                                        </div>
-                                                        <!-- The extended global progress state -->
-                                                        <div class="progress-extended">&nbsp;</div>
-                                                    </div>
-                                                </div>
-                                                <!-- The table listing the files available for upload/download -->
-                                                <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
-                                            </form>
-                                        </div>
-                                        </p>
-                                        <p>视频标题：<input type="text"></p>
-                                        <p>视频截图：<img src="images/111.jpg" width="80px"> </p>
-                                        <p>视频类型：
-                                            <select name="" style="width: 30%;height: 4%;font-size: 20px;text-align: center">
-                                                <option name="">番剧</option>
-                                                <option name="">动画</option>
-                                                <option name="">娱乐</option>
-                                                <option name="">音乐</option>
-                                            </select>
-                                        </p>
-                                        <p>视频标签：<input type="text"></p>
-                                        <p>视频简介：<textarea placeholder="添加视频的简介"></textarea></p>
-                                        <!-- 视频简介之后添加 -->
-                                    </div>
-
-
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default"
-                                                data-dismiss="modal">关闭
-                                        </button>
-                                        <button type="button" class="btn btn-primary">
-                                            上传
-                                        </button>
-                                    </div>
-                                </div><!-- /.modal-content -->
-                            </div><!-- /.modal -->
-                    </div>
-                <!-- End of dialog -->
-                </div>
-        </div>
             </div>
+        </div>
     </section>
 
 
@@ -235,82 +193,83 @@
 
     <!-- The template to display files available for upload -->
     <script id="template-upload" type="text/x-tmpl">
-{% for (var i=0, file; file=o.files[i]; i++) { %}
-    <tr class="template-upload fade">
-        <td>
-            <span class="preview"></span>
-        </td>
-        <td>
-            <p class="name">{%=file.name%}</p>
-            <strong class="error text-danger"></strong>
-        </td>
-        <td>
-            <p class="size">Processing...</p>
-            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
-        </td>
-        <td>
-            {% if (!i && !o.options.autoUpload) { %}
-                <button class="btn btn-primary start" disabled>
-                    <i class="glyphicon glyphicon-upload"></i>
-                    <span>Start</span>
-                </button>
-            {% } %}
-            {% if (!i) { %}
-                <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Cancel</span>
-                </button>
-            {% } %}
-        </td>
-    </tr>
-{% } %}
-</script>
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade">
+            <td>
+                <span class="preview"></span>
+            </td>
+            <td>
+                <p class="name">{%=file.name%}</p>
+                <strong class="error text-danger"></strong>
+            </td>
+            <td>
+                <p class="size">Processing...</p>
+                <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+            </td>
+            <td>
+                {% if (!i && !o.options.autoUpload) { %}
+                    <button class="btn btn-primary start" disabled>
+                        <i class="glyphicon glyphicon-upload"></i>
+                        <span>Start</span>
+                    </button>
+                {% } %}
+                {% if (!i) { %}
+                    <button class="btn btn-warning cancel">
+                        <i class="glyphicon glyphicon-ban-circle"></i>
+                        <span>Cancel</span>
+                    </button>
+                {% } %}
+            </td>
+        </tr>
+    {% } %}
+    </script>
     <!-- The template to display files available for download -->
     <script id="template-download" type="text/x-tmpl">
-{% for (var i=0, file; file=o.files[i]; i++) { %}
-    <tr class="template-download fade">
-        <%--<td>--%>
-            <%--<span class="preview">--%>
-                <%--{% if (file.thumbnailUrl) { %}--%>
-                    <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>--%>
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade">
+            <%--<td>--%>
+                <%--<span class="preview">--%>
+                    <%--{% if (file.thumbnailUrl) { %}--%>
+                        <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>--%>
+                    <%--{% } %}--%>
+                <%--</span>--%>
+            <%--</td>--%>
+            <%--<td>--%>
+                <%--<p class="name">--%>
+                    <%--{% if (file.url) { %}--%>
+                        <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>--%>
+                    <%--{% } else { %}--%>
+                        <%--<span>{%=file.name%}</span>--%>
+                    <%--{% } %}--%>
+                <%--</p>--%>
+                <%--{% if (file.error) { %}--%>
+                    <%--<div><span class="label label-danger">Error</span> {%=file.error%}</div>--%>
                 <%--{% } %}--%>
-            <%--</span>--%>
-        <%--</td>--%>
-        <%--<td>--%>
-            <%--<p class="name">--%>
-                <%--{% if (file.url) { %}--%>
-                    <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>--%>
+            <%--</td>--%>
+            <%--<td>--%>
+                <%--<span class="size">{%=o.formatFileSize(file.size)%}</span>--%>
+            <%--</td>--%>
+            <%--<td>--%>
+                <%--{% if (file.deleteUrl) { %}--%>
+                    <%--<button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>--%>
+                        <%--<i class="glyphicon glyphicon-trash"></i>--%>
+                        <%--<span>Delete</span>--%>
+                    <%--</button>--%>
+                    <%--<input type="checkbox" name="delete" value="1" class="toggle">--%>
                 <%--{% } else { %}--%>
-                    <%--<span>{%=file.name%}</span>--%>
+                    <%--<button class="btn btn-warning cancel">--%>
+                        <%--<i class="glyphicon glyphicon-ban-circle"></i>--%>
+                        <%--<span>Cancel</span>--%>
+                    <%--</button>--%>
                 <%--{% } %}--%>
-            <%--</p>--%>
-            <%--{% if (file.error) { %}--%>
-                <%--<div><span class="label label-danger">Error</span> {%=file.error%}</div>--%>
-            <%--{% } %}--%>
-        <%--</td>--%>
-        <%--<td>--%>
-            <%--<span class="size">{%=o.formatFileSize(file.size)%}</span>--%>
-        <%--</td>--%>
-        <%--<td>--%>
-            <%--{% if (file.deleteUrl) { %}--%>
-                <%--<button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>--%>
-                    <%--<i class="glyphicon glyphicon-trash"></i>--%>
-                    <%--<span>Delete</span>--%>
-                <%--</button>--%>
-                <%--<input type="checkbox" name="delete" value="1" class="toggle">--%>
-            <%--{% } else { %}--%>
-                <%--<button class="btn btn-warning cancel">--%>
-                    <%--<i class="glyphicon glyphicon-ban-circle"></i>--%>
-                    <%--<span>Cancel</span>--%>
-                <%--</button>--%>
-            <%--{% } %}--%>
-        <%--</td>--%>
-        <td>
-            <span class="size">Upload <b>{%=file.name%}</b> succeed!</span>
-        </td>
-    </tr>
-{% } %}
-</script>
+            <%--</td>--%>
+            <td>
+                <span class="size">Upload <b>{%=file.name%}</b> succeed!</span>
+            </td>
+        </tr>
+    {% } %}
+    </script>
+
     <script src="js/jquery.min.js"></script>
     <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
     <script src="js/vendor/jquery.ui.widget.js"></script>
@@ -361,27 +320,27 @@
     <script src="js/classie.js"></script>
     <!-- Carousel -->
     <script src="js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function() {
+    <%--<script>--%>
+        <%--$(document).ready(function() {--%>
 
-            $("#owl-demo-1").owlCarousel({
-                items : 4,
-                lazyLoad : true,
-                navigation : true
-            });
-            $("#owl-demo-2").owlCarousel({
-                items : 4,
-                lazyLoad : true,
-                navigation : true
-            });
-            $("#owl-demo-3").owlCarousel({
-                items : 4,
-                lazyLoad : true,
-                navigation : true
-            });
-        });
+            <%--$("#owl-demo-1").owlCarousel({--%>
+                <%--items : 4,--%>
+                <%--lazyLoad : true,--%>
+                <%--navigation : true--%>
+            <%--});--%>
+            <%--$("#owl-demo-2").owlCarousel({--%>
+                <%--items : 4,--%>
+                <%--lazyLoad : true,--%>
+                <%--navigation : true--%>
+            <%--});--%>
+            <%--$("#owl-demo-3").owlCarousel({--%>
+                <%--items : 4,--%>
+                <%--lazyLoad : true,--%>
+                <%--navigation : true--%>
+            <%--});--%>
+        <%--});--%>
 
-    </script>
+    <%--</script>--%>
 </div>
 </body>
 </html>
