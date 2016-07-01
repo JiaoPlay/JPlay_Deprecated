@@ -3,6 +3,18 @@ package com.pojo;
 /**
  * Created by Admin on 2016/6/27.
  */
+
+/**
+ * Follow类 表达用户关注用户的关系类（基于JavaBean概念）
+ * <p>
+ *     Follow私有成员<br>
+ *     followerId          关注用户的Id<br>
+ *     followeeId          被关注用户的Id<br>
+ *     createTime          用户关注动作发生的时间<br>
+ *     userByFollowerId    该关注用户Id下的用户<br>
+ *     userByFolloweeId    该被关注用户Id下的用户<br>
+ * </p>
+ */
 public class Follow {
     private int followerId;
     private int followeeId;

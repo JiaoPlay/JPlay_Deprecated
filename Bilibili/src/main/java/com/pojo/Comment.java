@@ -6,6 +6,17 @@ import java.util.Collection;
 /**
  * Created by Admin on 2016/6/27.
  */
+
+/**
+ * Comment类 表达用户对视频评论的实体类（基于JavaBean概念）
+ * <p>
+ *     Comment私有成员<br>
+ *     commentId     视频评论的ID，用于查找功能<br>
+ *     content       视频点评的内容，描述视频点评的所有内容，包括文字、表情、标点符号等<br>
+ *     createTime    视频点评的发布时间<br>
+ *     thumbCount    视频点评的点赞数，描述用户对于该视频点评进行点赞行为的总数<br>
+ * </p>
+ */
 public class Comment {
     private int commentId;
     private String content;
