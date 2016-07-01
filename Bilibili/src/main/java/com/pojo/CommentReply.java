@@ -3,6 +3,17 @@ package com.pojo;
 /**
  * Created by Admin on 2016/6/27.
  */
+
+/**
+ * CommentReply类 表达视频评论和视频评论回复的关系类（基于JavaBean概念）
+ * <p>
+ *     CommentReply私有成员<br>
+ *     commentId             视频评论的ID<br>
+ *     replyId               视频评论回复的ID<br>
+ *     commentByCommentId    该视频评论ID下的视频评论<br>
+ *     replyByReplyId        该视频评论回复ID下的视频评论回复<br>
+ * </p>
+ */
 public class CommentReply {
     private int commentId;
     private int replyId;

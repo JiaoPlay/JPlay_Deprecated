@@ -5,6 +5,15 @@ import java.util.Collection;
 /**
  * Created by Admin on 2016/6/27.
  */
+
+/**
+ * Interestsgroup类 表达用户在社区中的兴趣小组的实体类（基于JavaBean概念）
+ * <p>
+ *     Interestsgroup私有成员<br>
+ *     interestsGroupId     兴趣小组的ID，用于查找功能<br>
+ *     interstGroupName     兴趣小组的名称，描述兴趣小组的基本属性<br>
+ * </p>
+ */
 public class Interestsgroup {
     private int interestGroupId;
     private String interstGroupName;
