@@ -8,7 +8,7 @@ import java.io.*;
  * Created by Admin on 2016/6/28.
  */
 public class uploadHandler extends ActionSupport {
-    private static final String storagePath = "E:\\Workspace\\jvideo\\uploadTest\\";
+    private static final String storagePath = "/Users/apple/Downloads/";
     private File upload;
     private String uploadFileName;
     private String uploadContentType;
