@@ -4,11 +4,14 @@ import com.opensymphony.xwork2.ActionSupport;
 
 import java.io.*;
 
+import static org.apache.struts2.ServletActionContext.getServletContext;
+
 /**
  * Created by Admin on 2016/6/28.
  */
 public class uploadHandler extends ActionSupport {
-    private static final String storagePath = "E:\\Workspace\\jvideo\\uploadTest\\";
+    private static final String storagePath="D:\\workspace\\fileupload\\";
+    /*private static final String storagePath = "E:\\Workspace\\jvideo\\uploadTest\\";*/
     private File upload;
     private String uploadFileName;
     private String uploadContentType;
@@ -38,7 +41,8 @@ public class uploadHandler extends ActionSupport {
     }
 
     public String execute() throws Exception {
-        System.out.println("execute " + uploadFileName);
+        //String storagePath=getServletContext().getRealPath("videos")+File.separator+"temp"+File.separator;
+        System.out.println("execute " + storagePath+uploadFileName);
         FileInputStream fileInputStream = new FileInputStream(upload);
         File file = new File(storagePath + uploadFileName);  // + "." + fileType It is possible to have same filename
         if (!file.exists()) {
