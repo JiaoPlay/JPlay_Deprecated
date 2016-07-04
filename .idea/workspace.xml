@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04523247-4ffc-45b9-a748-cdd4a5141527" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/tools/ffmpeg.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/tools/player.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/css/demo-ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/css/jquery.fileupload-noscript.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/css/jquery.fileupload-ui-noscript.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/css/jquery.fileupload-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/css/jquery.fileupload.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/cors/jquery.postmessage-transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/cors/jquery.xdr-transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-process.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.fileupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.iframe-transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/js/vendor/jquery.ui.widget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/action/videoAction.class" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/action/videoAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/videoDAOImpl.class" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/dao/daoImpl/videoDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/dao/videoDAO.class" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/dao/videoDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/util/uploadHandler.class" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/com/util/uploadHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/com/action/videoAction.class" afterPath="$PROJECT_DIR$/Bilibili/target/classes/com/action/videoAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/com/dao/daoImpl/videoDAOImpl.class" afterPath="$PROJECT_DIR$/Bilibili/target/classes/com/dao/daoImpl/videoDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/com/dao/videoDAO.class" afterPath="$PROJECT_DIR$/Bilibili/target/classes/com/dao/videoDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/com/util/uploadHandler.class" afterPath="$PROJECT_DIR$/Bilibili/target/classes/com/util/uploadHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/.idea/encodings.xml" afterPath="$PROJECT_DIR$/Bilibili/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Bilibili/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/java/com/action/videoAction.java" afterPath="$PROJECT_DIR$/Bilibili/src/main/java/com/action/videoAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/java/com/dao/DAOFactory.java" afterPath="$PROJECT_DIR$/Bilibili/src/main/java/com/dao/DAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/java/com/dao/daoImpl/videoDAOImpl.java" afterPath="$PROJECT_DIR$/Bilibili/src/main/java/com/dao/daoImpl/videoDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/java/com/dao/videoDAO.java" afterPath="$PROJECT_DIR$/Bilibili/src/main/java/com/dao/videoDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/java/com/util/uploadHandler.java" afterPath="$PROJECT_DIR$/Bilibili/src/main/java/com/util/uploadHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/resources/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Authority.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Authority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Category.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Category.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Comment.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Comment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/CommentReply.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/CommentReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/CommentReport.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/CommentReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/FavoriteGroup.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/FavoriteGroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Follow.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Follow.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/GroupPost.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/GroupPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/InterestgroupUser.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/InterestgroupUser.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Interestsgroup.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Interestsgroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Letter.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Letter.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Post.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Post.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Reply.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Reply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/ReplyPost.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/ReplyPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/ReplyReport.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/ReplyReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Role.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Role.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/RoleAuthority.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/RoleAuthority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Series.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Series.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/SeriesVideo.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/SeriesVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Subcategory.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Subcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Subscribe.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Subscribe.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Tag.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Tag.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/TagVideo.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/TagVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserComment.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserPost.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserReply.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserRole.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/UserRole.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Video.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/Video.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoComment.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoFavorite.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoFavorite.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoReport.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoSubcategory.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoSubcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoUper.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/VideoUper.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/WEB-INF/classes/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/gallery.jsp" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/gallery.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/single.jsp" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/single.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/src/main/webapp/upload.jsp" afterPath="$PROJECT_DIR$/Bilibili/src/main/webapp/upload.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Authority.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Authority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Category.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Category.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Comment.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Comment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/CommentReply.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/CommentReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/CommentReport.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/CommentReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/FavoriteGroup.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/FavoriteGroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Follow.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Follow.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/GroupPost.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/GroupPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/InterestgroupUser.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/InterestgroupUser.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Interestsgroup.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Interestsgroup.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Letter.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Letter.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Post.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Post.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Reply.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Reply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/ReplyPost.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/ReplyPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/ReplyReport.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/ReplyReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Role.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Role.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/RoleAuthority.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/RoleAuthority.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Series.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Series.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/SeriesVideo.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/SeriesVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Subcategory.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Subcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Subscribe.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Subscribe.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Tag.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Tag.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/TagVideo.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/TagVideo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/UserComment.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/UserComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/UserPost.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/UserPost.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/UserReply.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/UserReply.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/UserRole.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/UserRole.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/Video.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/Video.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/VideoComment.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/VideoComment.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/VideoFavorite.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/VideoFavorite.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/VideoReport.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/VideoReport.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/VideoSubcategory.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/VideoSubcategory.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/VideoUper.hbm.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/VideoUper.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bilibili/target/classes/struts.xml" afterPath="$PROJECT_DIR$/Bilibili/target/classes/struts.xml" />
+    </list>
+    <ignored path="JPlay.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="JPlay" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPlay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPlay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPlay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Bilibili" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04523247-4ffc-45b9-a748-cdd4a5141527" name="Default" comment="" />
+      <created>1467592634160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1467592634160</updated>
+      <workItem from="1467592635715" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
