@@ -44,101 +44,101 @@
         <property name="experience">
             <column name="experience" sql-type="int(11)" not-null="true"/>
         </property>
-        <set name="commentReportsByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.CommentReport"/>
-        </set>
-        <set name="favoriteGroupsByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.FavoriteGroup"/>
-        </set>
-        <set name="followsByUserId" inverse="true">
-            <key>
-                <column name="follower_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.Follow"/>
-        </set>
-        <set name="followsByUserId_0" inverse="true">
-            <key>
-                <column name="followee_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.Follow"/>
-        </set>
-        <set name="interestgroupUsersByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.InterestgroupUser"/>
-        </set>
-        <set name="lettersByUserId" inverse="true">
-            <key>
-                <column name="reveiver_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.Letter"/>
-        </set>
-        <set name="lettersByUserId_0" inverse="true">
-            <key>
-                <column name="sender_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.Letter"/>
-        </set>
-        <set name="replyPostsByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.ReplyPost"/>
-        </set>
-        <set name="replyReportsByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.ReplyReport"/>
-        </set>
-        <set name="subscribesByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.Subscribe"/>
-        </set>
-        <set name="userCommentsByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.UserComment"/>
-        </set>
-        <set name="userPostsByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.UserPost"/>
-        </set>
-        <set name="userRepliesByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.UserReply"/>
-        </set>
-        <set name="userRolesByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.UserRole"/>
-        </set>
-        <set name="videoReportsByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.VideoReport"/>
-        </set>
-        <set name="videoUpersByUserId" inverse="true">
-            <key>
-                <column name="user_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.VideoUper"/>
-        </set>
+        <!--<set name="commentReportsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.CommentReport"/>-->
+        <!--</set>-->
+        <!--<set name="favoriteGroupsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.FavoriteGroup"/>-->
+        <!--</set>-->
+        <!--<set name="followsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="follower_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.Follow"/>-->
+        <!--</set>-->
+        <!--<set name="followsByUserId_0" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="followee_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.Follow"/>-->
+        <!--</set>-->
+        <!--<set name="interestgroupUsersByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.InterestgroupUser"/>-->
+        <!--</set>-->
+        <!--<set name="lettersByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="reveiver_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.Letter"/>-->
+        <!--</set>-->
+        <!--<set name="lettersByUserId_0" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="sender_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.Letter"/>-->
+        <!--</set>-->
+        <!--<set name="replyPostsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.ReplyPost"/>-->
+        <!--</set>-->
+        <!--<set name="replyReportsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.ReplyReport"/>-->
+        <!--</set>-->
+        <!--<set name="subscribesByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.Subscribe"/>-->
+        <!--</set>-->
+        <!--<set name="userCommentsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.UserComment"/>-->
+        <!--</set>-->
+        <!--<set name="userPostsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.UserPost"/>-->
+        <!--</set>-->
+        <!--<set name="userRepliesByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.UserReply"/>-->
+        <!--</set>-->
+        <!--<set name="userRolesByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.UserRole"/>-->
+        <!--</set>-->
+        <!--<set name="videoReportsByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.VideoReport"/>-->
+        <!--</set>-->
+        <!--<set name="videoUpersByUserId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="user_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.VideoUper"/>-->
+        <!--</set>-->
     </class>
 </hibernate-mapping>

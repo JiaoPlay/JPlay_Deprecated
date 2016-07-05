@@ -69,6 +69,7 @@
                 <!-- The fileinput-button span is used to style the file input field as button -->
                 <span class="btn btn-success fileinput-button">
                     <i class="glyphicon glyphicon-plus"></i>
+
                     <span>Add files...</span>
                     <input type="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
                 </span>
@@ -100,6 +101,7 @@
         </div>
         <!-- The table listing the files available for upload/download -->
         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+        <button type="submit">dd</button>
     </form>
     <br>
     <div class="panel panel-default">

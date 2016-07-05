@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: slt
@@ -118,6 +119,7 @@
 
 </head>
 <body id="wrapper" >
+
 <div class="wrap-body">
     <!--////////////////////////////////////Header-->
     <header>
@@ -165,12 +167,13 @@
                         <div class="row fileupload-buttonbar">
                             <div class="col-lg-7">
                                 <!-- The fileinput-button span is used to style the file input field as button -->
-                <span class="btn btn-success fileinput-button">
-                    <i class="glyphicon glyphicon-plus"></i>
-                    <span>Add files...</span>
-                    <input type="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
-                </span>
-                                <button type="submit" class="btn btn-primary start">
+                                <span class="btn btn-success fileinput-button">
+                                    <i class="glyphicon glyphicon-plus"></i>
+
+                                    <span>Add files...</span>
+                                    <input type="file" id="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
+                                </span>
+                                <button type="submit"  class="btn btn-primary start" >
                                     <i class="glyphicon glyphicon-upload"></i>
                                     <span>Start upload</span>
                                 </button>
@@ -196,20 +199,16 @@
                                 <div class="progress-extended">&nbsp;</div>
                             </div>
                         </div>
+                        <s:if test = "uploadFileName != null">
+                            <label value="${uploadFileName}"></label>
+                        </s:if>
+
                         <!-- The table listing the files available for upload/download -->
                         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
-
-                    </form>
-                    <form id="ss" action="uploadVideoInfo.action" method="post">
-                        <p>
-                            <span>
-                                <label>Title</label>
-                            </span>
-                            <span>
-                                <input required type="text" name="title">
-                            </span>
-                        </p>
-                        <p>Content:<input required type="text" name="content"></p>
+                </form>
+                    <form action="uploadVideoInfo.action" method="post">
+                        <p>标题：<input required name="title"></p>
+                        <p>内容：<textarea name="content"></textarea></p>
                         <input type="submit" value="提交">
                     </form>
                 </div>
@@ -403,7 +402,8 @@
             <%--{% } %}--%>
         <%--</td>--%>
         <td>
-            <span class="size">Upload succeed!</span>
+            <span class="size">Upload {%=file.name%} succeed!</span>
+
         </td>
     </tr>
 {% } %}
@@ -457,6 +457,19 @@
 
     <script src="js/demo.js"></script>
     <script src="js/classie.js"></script>
+
+    <script>
+        function vad()
+        {
+            alert("ss");
+            var v=document.getElementById("upload");
+            alert(v);
+            ${videoName}.innerHTML(v);
+        }
+
+
+    </script>
+
     <!-- Carousel -->
     <script src="js/owl.carousel.js"></script>
     <%--<script>--%>

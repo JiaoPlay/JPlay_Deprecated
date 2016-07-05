@@ -79,7 +79,9 @@
 			<div class="row">
 				<div id="main-content" class="col-2-3">
 					<div class="wrap-vid">
-						<iframe width="100%" height="400" src="https://www.youtube.com/embed/IsPFDzAGb4A" frameborder="0" allowfullscreen></iframe>
+
+						<iframe width="100%" height="400" src="localhost:8080\videos\1467592431426.flv" frameborder="0" allowfullscreen></iframe>
+							<%--<video width="100%" height="400" src="localhost:8080\videos\1467592431426.flv"  controls="controls" ></video>--%>
 					</div>
 					<div class="row">
 						<div class="share">
