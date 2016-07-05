@@ -1,25 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>FrameModel</groupId>
-    <artifactId>FrameModel</artifactId>
-    <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>FrameModel Maven Webapp</name>
-    <url>http://maven.apache.org</url>
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>FrameModel</groupId>
+  <artifactId>FrameModel</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>FrameModel Maven Webapp</name>
+  <url>http://maven.apache.org</url>
 
 
-    <!--<dependencies>-->
+  <!--<dependencies>-->
     <!--<dependency>-->
-    <!--<groupId>junit</groupId>-->
-    <!--<artifactId>junit</artifactId>-->
-    <!--<version>3.8.1</version>-->
-    <!--<scope>mongodb</scope>-->
+      <!--<groupId>junit</groupId>-->
+      <!--<artifactId>junit</artifactId>-->
+      <!--<version>3.8.1</version>-->
+      <!--<scope>test</scope>-->
     <!--</dependency>-->
-    <!--</dependencies>-->
-    <!--<build>-->
+  <!--</dependencies>-->
+  <!--<build>-->
     <!--<finalName>FrameModel</finalName>-->
-    <!--</build>-->
+  <!--</build>-->
     <properties>
         <spring.version>3.1.1.RELEASE</spring.version>
         <struts.version>2.3.4</struts.version>
@@ -32,12 +32,6 @@
     </properties>
 
     <dependencies>
-        <!-- mongodb java driver -->
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>3.2.2</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>

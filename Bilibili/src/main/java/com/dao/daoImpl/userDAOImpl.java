@@ -52,4 +52,17 @@ public class userDAOImpl extends HibernateDaoSupport implements userDAO {
     public User findUserById(int userId) {
         return  getHibernateTemplate().load(User.class, userId);
     }
+
+    /**
+     * findUserByUsername方法实现了根据username找到一个user信息的功能
+     * @param username 传入username作为查找因子
+     * @return 返回需要查找的User类的对象
+     */
+    @Override
+    public User findUserByUsername(String username) {
+        if(getHibernateTemplate().find("from User where username = ?",username).size()==0)
+            return null;
+        else
+            return (User)getHibernateTemplate().find("from User where username = ?",username).get(0);
+    }
 }

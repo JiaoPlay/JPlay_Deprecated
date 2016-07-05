@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: slt
@@ -61,6 +62,35 @@
         </a>
     </div>
     <![endif]-->
+    <script type="text/javascript">
+        var url;
+
+        function uploadVideo(){
+            $('#fmUser').form('submit',{
+                url: url,
+                onSubmit: function(){
+                    return $(this).form('validate');
+                },
+                success: function(result){
+                    var suc=1;
+
+                    if (result==suc){
+                        $('#dlgUser').dialog('close');		// close the dialog
+                        $('#userTable').datagrid('reload');	// reload the user data
+
+                    } else {
+                        $.messager.show({
+                            title: 'Error',
+                            msg:'Invalid input!'
+                        });
+                    }
+                }
+            });
+        }
+
+    </script>
+
+
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script>
     <script src="js/css3-mediaqueries.js"></script>
@@ -75,7 +105,7 @@
         .upload{
             color:#000;
             background:rgba(255,255,255,0.6);
-            background: #ffffff 9;/*CSS Hack,只能对ie9以下浏览器ie6,ie7,ie8有效，否侧ie10,FF,Cherome会失去透明效果*/
+            background: #ffffff;/*CSS Hack,只能对ie9以下浏览器ie6,ie7,ie8有效，否侧ie10,FF,Cherome会失去透明效果*/
             filter:Alpha(opacity=60);/*只对ie7,ie8有效*/
         }
         .upload p,
@@ -89,6 +119,7 @@
 
 </head>
 <body id="wrapper" >
+
 <div class="wrap-body">
     <!--////////////////////////////////////Header-->
     <header>
@@ -128,6 +159,7 @@
                     <h2><strong>视频上传</strong></h2>
                     <p>&nbsp;请在这里上传您的视频</p>
                     <!-- The file upload form used as target for the file upload widget -->
+                    <!-- The file upload form used as target for the file upload widget -->
                     <form id="fileupload" action="uploadTestAction.action" method="POST" enctype="multipart/form-data">
                         <!-- Redirect browsers with JavaScript disabled to the origin page -->
                         <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
@@ -139,9 +171,9 @@
                                     <i class="glyphicon glyphicon-plus"></i>
 
                                     <span>Add files...</span>
-                                    <input type="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
+                                    <input type="file" id="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
                                 </span>
-                                <button type="submit" class="btn btn-primary start">
+                                <button type="submit"  class="btn btn-primary start" >
                                     <i class="glyphicon glyphicon-upload"></i>
                                     <span>Start upload</span>
                                 </button>
@@ -167,11 +199,117 @@
                                 <div class="progress-extended">&nbsp;</div>
                             </div>
                         </div>
+                        <s:if test = "uploadFileName != null">
+                            <label value="${uploadFileName}"></label>
+                        </s:if>
+
                         <!-- The table listing the files available for upload/download -->
                         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+                </form>
+                    <form action="uploadVideoInfo.action" method="post">
+                        <p>标题：<input required name="title"></p>
+                        <p>内容：<textarea name="content"></textarea></p>
+                        <input type="submit" value="提交">
                     </form>
                 </div>
             </div>
+        </div>
+    </section>
+<!--
+                    <%--    <!-- 模态框（Modal） -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="width:100%"
+                             aria-labelledby="myModalLabel" aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close"
+                                                data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            视频上传
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body" style="padding-left: 2%" >
+                                        <p>视频路径：  <!-- The file upload form used as target for the file upload widget -->
+                                        <div class="container">
+                                        <form id="fileupload" action="uploadTestAction.action" method="POST" enctype="multipart/form-data">
+                                            <!-- Redirect browsers with JavaScript disabled to the origin page -->
+                                            <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
+                                            <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+                                            <div class="row fileupload-buttonbar">
+                                                <div class="col-lg-7">
+                                                    <!-- The fileinput-button span is used to style the file input field as button -->
+                                                    <span class="btn btn-success fileinput-button">
+                                                        <i class="glyphicon glyphicon-plus"></i>
+
+                                                        <span>Add files...</span>
+                                                        <input type="file" name="upload" multiple accept=".avi,.mov,.mpeg,.mpg,.flv,.mp4,.mkv,.wmv,.rmvb">
+                                                    </span>
+                                                    <button type="submit" class="btn btn-primary start">
+                                                        <i class="glyphicon glyphicon-upload"></i>
+                                                        <span>Start upload</span>
+                                                    </button>
+                                                    <button type="reset" class="btn btn-warning cancel">
+                                                        <i class="glyphicon glyphicon-ban-circle"></i>
+                                                        <span>Cancel upload</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger delete">
+                                                        <i class="glyphicon glyphicon-trash"></i>
+                                                        <span>Delete</span>
+                                                    </button>
+                                                    <input type="checkbox" class="toggle">
+                                                    <!-- The global file processing state -->
+                                                    <span class="fileupload-process"></span>
+                                                </div>
+                                                <!-- The global progress state -->
+                                                <div class="col-lg-5 fileupload-progress fade">
+                                                    <!-- The global progress bar -->
+                                                    <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                                    </div>
+                                                    <!-- The extended global progress state -->
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                            <!-- The table listing the files available for upload/download -->
+                                            <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+                                        </form>
+                                        <br>
+
+                                        </div>
+
+                                        </p>
+                                        <form id="dlg-video"action="uploadVideoInfo">
+                                            <p>视频标题：<input type="text"></p>
+                                            <p>视频截图：<img src="images/111.jpg" width="80px"> </p>
+                                            <p>视频类型：
+                                                <select name="" style="width: 30%;height: 4%;font-size: 20px;text-align: center">
+                                                    <option name="">番剧</option>
+                                                    <option name="">动画</option>
+                                                    <option name="">娱乐</option>
+                                                    <option name="">音乐</option>
+                                                </select>
+                                            </p>
+                                            <p>视频标签：<input type="text"></p>
+                                            <p>视频简介：<textarea placeholder="添加视频的简介"></textarea></p>
+                                        </form>
+                                    </div>
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">关闭
+                                        </button>
+                                        <button type="submit" class="btn btn-primary" onclick="uploadVideo()">
+                                            上传
+                                        </button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal -->
+                    </div>
+                <!-- End of dialog -->
+                </div>--%>
         </div>
     </section>
 
@@ -193,82 +331,83 @@
 
     <!-- The template to display files available for upload -->
     <script id="template-upload" type="text/x-tmpl">
-    {% for (var i=0, file; file=o.files[i]; i++) { %}
-        <tr class="template-upload fade">
-            <td>
-                <span class="preview"></span>
-            </td>
-            <td>
-                <p class="name">{%=file.name%}</p>
-                <strong class="error text-danger"></strong>
-            </td>
-            <td>
-                <p class="size">Processing...</p>
-                <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
-            </td>
-            <td>
-                {% if (!i && !o.options.autoUpload) { %}
-                    <button class="btn btn-primary start" disabled>
-                        <i class="glyphicon glyphicon-upload"></i>
-                        <span>Start</span>
-                    </button>
-                {% } %}
-                {% if (!i) { %}
-                    <button class="btn btn-warning cancel">
-                        <i class="glyphicon glyphicon-ban-circle"></i>
-                        <span>Cancel</span>
-                    </button>
-                {% } %}
-            </td>
-        </tr>
-    {% } %}
-    </script>
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{%=file.name%}</p>
+            <strong class="error text-danger"></strong>
+        </td>
+        <td>
+            <p class="size">Processing...</p>
+            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+        </td>
+        <td>
+            {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn btn-primary start" disabled>
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Start</span>
+                </button>
+            {% } %}
+            {% if (!i) { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
     <!-- The template to display files available for download -->
     <script id="template-download" type="text/x-tmpl">
-    {% for (var i=0, file; file=o.files[i]; i++) { %}
-        <tr class="template-download fade">
-            <%--<td>--%>
-                <%--<span class="preview">--%>
-                    <%--{% if (file.thumbnailUrl) { %}--%>
-                        <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>--%>
-                    <%--{% } %}--%>
-                <%--</span>--%>
-            <%--</td>--%>
-            <%--<td>--%>
-                <%--<p class="name">--%>
-                    <%--{% if (file.url) { %}--%>
-                        <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>--%>
-                    <%--{% } else { %}--%>
-                        <%--<span>{%=file.name%}</span>--%>
-                    <%--{% } %}--%>
-                <%--</p>--%>
-                <%--{% if (file.error) { %}--%>
-                    <%--<div><span class="label label-danger">Error</span> {%=file.error%}</div>--%>
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download fade">
+        <%--<td>--%>
+            <%--<span class="preview">--%>
+                <%--{% if (file.thumbnailUrl) { %}--%>
+                    <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>--%>
                 <%--{% } %}--%>
-            <%--</td>--%>
-            <%--<td>--%>
-                <%--<span class="size">{%=o.formatFileSize(file.size)%}</span>--%>
-            <%--</td>--%>
-            <%--<td>--%>
-                <%--{% if (file.deleteUrl) { %}--%>
-                    <%--<button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>--%>
-                        <%--<i class="glyphicon glyphicon-trash"></i>--%>
-                        <%--<span>Delete</span>--%>
-                    <%--</button>--%>
-                    <%--<input type="checkbox" name="delete" value="1" class="toggle">--%>
+            <%--</span>--%>
+        <%--</td>--%>
+        <%--<td>--%>
+            <%--<p class="name">--%>
+                <%--{% if (file.url) { %}--%>
+                    <%--<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>--%>
                 <%--{% } else { %}--%>
-                    <%--<button class="btn btn-warning cancel">--%>
-                        <%--<i class="glyphicon glyphicon-ban-circle"></i>--%>
-                        <%--<span>Cancel</span>--%>
-                    <%--</button>--%>
+                    <%--<span>{%=file.name%}</span>--%>
                 <%--{% } %}--%>
-            <%--</td>--%>
-            <td>
-                <span class="size">Upload <b>{%=file.name%}</b> succeed!</span>
-            </td>
-        </tr>
-    {% } %}
-    </script>
+            <%--</p>--%>
+            <%--{% if (file.error) { %}--%>
+                <%--<div><span class="label label-danger">Error</span> {%=file.error%}</div>--%>
+            <%--{% } %}--%>
+        <%--</td>--%>
+        <%--<td>--%>
+            <%--<span class="size">{%=o.formatFileSize(file.size)%}</span>--%>
+        <%--</td>--%>
+        <%--<td>--%>
+            <%--{% if (file.deleteUrl) { %}--%>
+                <%--<button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>--%>
+                    <%--<i class="glyphicon glyphicon-trash"></i>--%>
+                    <%--<span>Delete</span>--%>
+                <%--</button>--%>
+                <%--<input type="checkbox" name="delete" value="1" class="toggle">--%>
+            <%--{% } else { %}--%>
+                <%--<button class="btn btn-warning cancel">--%>
+                    <%--<i class="glyphicon glyphicon-ban-circle"></i>--%>
+                    <%--<span>Cancel</span>--%>
+                <%--</button>--%>
+            <%--{% } %}--%>
+        <%--</td>--%>
+        <td>
+            <span class="size">Upload {%=file.name%} succeed!</span>
+
+        </td>
+    </tr>
+{% } %}
+</script>
 
     <script src="js/jquery.min.js"></script>
     <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
@@ -318,6 +457,19 @@
 
     <script src="js/demo.js"></script>
     <script src="js/classie.js"></script>
+
+    <script>
+        function vad()
+        {
+            alert("ss");
+            var v=document.getElementById("upload");
+            alert(v);
+            ${videoName}.innerHTML(v);
+        }
+
+
+    </script>
+
     <!-- Carousel -->
     <script src="js/owl.carousel.js"></script>
     <%--<script>--%>
