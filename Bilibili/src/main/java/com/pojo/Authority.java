@@ -5,6 +5,16 @@ import java.util.Collection;
 /**
  * Created by Admin on 2016/6/27.
  */
+
+/**
+ * Authority类 表达用户权限的实体类（基于JavaBean概念）
+ * <p>
+ *     Authority私有成员<br>
+ *     authId       权限的ID，用于查找功能<br>
+ *     authName     权限的名称，描述权限的基本属性<br>
+ *     authContent  权限的内容，描述了权限的说明信息<br>
+ * </p>
+ */
 public class Authority {
     private int authId;
     private String authName;

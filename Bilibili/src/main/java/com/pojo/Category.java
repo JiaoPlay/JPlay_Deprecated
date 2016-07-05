@@ -5,6 +5,14 @@ import java.util.Collection;
 /**
  * Created by Admin on 2016/6/27.
  */
+
+/**
+ * Category类 表达视频分类的实体类（基于JavaBean概念）
+ * <p>
+ *     Category私有成员<br>
+ *     categoryName     视频分类的名称，描述视频分类的基本属性<br>
+ * </p>
+ */
 public class Category {
     private String categoryName;
     private Collection<Subcategory> subcategoriesByCategoryName;

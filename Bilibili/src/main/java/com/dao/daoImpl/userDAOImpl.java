@@ -52,4 +52,12 @@ public class userDAOImpl extends HibernateDaoSupport implements userDAO {
     public User findUserById(int userId) {
         return  getHibernateTemplate().load(User.class, userId);
     }
+
+    @Override
+    public User findUserByUsername(String username) {
+        if(getHibernateTemplate().find("from User where username = ?",username).size()==0)
+            return null;
+        else
+            return (User)getHibernateTemplate().find("from User where username = ?",username).get(0);
+    }
 }

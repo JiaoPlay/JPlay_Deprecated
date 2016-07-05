@@ -1,8 +1,14 @@
 package com.dao.daoImpl;
 
 import com.dao.videoDAO;
+import com.pojo.User;
 import com.pojo.Video;
+import org.apache.lucene.search.Query;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created by frank_xiang on 2016/6/28.
@@ -20,6 +26,7 @@ public class videoDAOImpl extends HibernateDaoSupport implements videoDAO {
     @Override
     public void createVideo(Video video) {
         getHibernateTemplate().save(video);
+        //getHibernateTemplate().save(video);
 //        getHibernateTemplate().flush();
     }
 
@@ -47,9 +54,22 @@ public class videoDAOImpl extends HibernateDaoSupport implements videoDAO {
      * findVideoById方法实现了根据videoId找到一个video信息的功能
      * @param videoId 传入videoId作为查找因子
      * @return 返回需要查找的Video类的对象
-     */
+    */
     @Override
     public Video findVideoById(int videoId) {
         return  getHibernateTemplate().load(Video.class, videoId);
     }
+
+    /**
+     * getAllVideoCount方法实现了查询本地库中所有Video记录的数目的功能
+     * @return 返回记录条目的总数
+     * @throws Exception
+     */
+    @Override
+    public int getAllVideoCount() {
+        String hql = "select count(*) from Video as video";
+        return Integer.parseInt(String.valueOf(getHibernateTemplate().find(hql).get(0)));
+    }
+
+
 }

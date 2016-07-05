@@ -1,7 +1,5 @@
 package com.util;
 
-import java.io.File;
-
 /**
  * Created by Admin on 2016/6/29.
  */
