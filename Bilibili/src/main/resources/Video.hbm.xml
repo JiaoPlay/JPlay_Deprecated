@@ -32,53 +32,53 @@
         <property name="clickCount">
             <column name="click_count" sql-type="int(10)"/>
         </property>
-        <set name="seriesVideosByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.SeriesVideo"/>
-        </set>
-        <set name="subscribesByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.Subscribe"/>
-        </set>
-        <set name="tagVideosByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.TagVideo"/>
-        </set>
-        <set name="videoCommentsByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.VideoComment"/>
-        </set>
-        <set name="videoFavoritesByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.VideoFavorite"/>
-        </set>
-        <set name="videoReportsByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.VideoReport"/>
-        </set>
-        <set name="videoSubcategoriesByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.VideoSubcategory"/>
-        </set>
-        <set name="videoUpersByVideoId" inverse="true">
-            <key>
-                <column name="video_id"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.pojo.VideoUper"/>
-        </set>
+        <!--<set name="seriesVideosByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.SeriesVideo"/>-->
+        <!--</set>-->
+        <!--<set name="subscribesByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.Subscribe"/>-->
+        <!--</set>-->
+        <!--<set name="tagVideosByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.TagVideo"/>-->
+        <!--</set>-->
+        <!--<set name="videoCommentsByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.VideoComment"/>-->
+        <!--</set>-->
+        <!--<set name="videoFavoritesByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.VideoFavorite"/>-->
+        <!--</set>-->
+        <!--<set name="videoReportsByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.VideoReport"/>-->
+        <!--</set>-->
+        <!--<set name="videoSubcategoriesByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.VideoSubcategory"/>-->
+        <!--</set>-->
+        <!--<set name="videoUpersByVideoId" inverse="true">-->
+            <!--<key>-->
+                <!--<column name="video_id"/>-->
+            <!--</key>-->
+            <!--<one-to-many not-found="ignore" class="com.pojo.VideoUper"/>-->
+        <!--</set>-->
     </class>
 </hibernate-mapping>

@@ -101,6 +101,7 @@
         </div>
         <!-- The table listing the files available for upload/download -->
         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+        <button type="submit">dd</button>
     </form>
     <br>
     <div class="panel panel-default">

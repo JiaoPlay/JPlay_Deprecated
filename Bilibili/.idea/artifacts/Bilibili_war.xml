@@ -3,14 +3,6 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="FrameModel.war">
       <element id="artifact" artifact-name="Bilibili:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="org.mongodb:mongo-java-driver:3.2.2" />
-          <element id="library" level="project" name="org.mongodb:mongodb-driver-core:3.2.2" />
-          <element id="library" level="project" name="org.mongodb:mongodb-driver:3.2.2" />
-          <element id="library" level="project" name="org.springframework.data:spring-data-mongodb:1.9.1.RELEASE" />
-        </element>
-      </element>
     </root>
   </artifact>
 </component>
