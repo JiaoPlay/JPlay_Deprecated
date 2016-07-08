@@ -1,6 +1,9 @@
 package com.service;
 
+import com.pojo.Category;
 import com.pojo.Video;
+
+import java.util.List;
 
 /**
  * Created by frank_xiang on 2016/7/4.
@@ -48,4 +51,16 @@ public interface videoService {
      * @throws Exception
      */
     public int getAllVideoCount();
+
+    public int findMaxVideoId();
+
+    public Category findCategoryByName(String categoryName);
+
+    public void videoThumbCount(int videoId);
+
+    public void videoReport(String username, int videoId);
+
+    public void addVideoUper(String username,int videoId);
+
+    public List<Video>showVideoByUper(String username);
 }

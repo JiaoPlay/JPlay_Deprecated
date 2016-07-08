@@ -20,7 +20,7 @@ public class authorityDAOImpl extends HibernateDaoSupport implements authorityDA
     @Override
     public void createAuthority(Authority authority) {
         getHibernateTemplate().save(authority);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class authorityDAOImpl extends HibernateDaoSupport implements authorityDA
     @Override
     public void deleteAuthority(int authId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Authority.class,authId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class authorityDAOImpl extends HibernateDaoSupport implements authorityDA
     @Override
     public void updateAuthority(Authority authority) {
         getHibernateTemplate().merge(authority);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**

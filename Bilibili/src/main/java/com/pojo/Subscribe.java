@@ -5,9 +5,25 @@ package com.pojo;
  */
 public class Subscribe {
     private int userId;
-    private int videoId;
     private User userByUserId;
-    private Video videoByVideoId;
+    private Series seriesBySeriesName;
+    private String seriesName;
+
+    public String getSeriesName() {
+        return seriesName;
+    }
+
+    public void setSeriesName(String seriesName) {
+        this.seriesName = seriesName;
+    }
+
+    public Series getSeriesBySeriesName() {
+        return seriesBySeriesName;
+    }
+
+    public void setSeriesBySeriesName(Series seriesBySeriesName) {
+        this.seriesBySeriesName = seriesBySeriesName;
+    }
 
     public int getUserId() {
         return userId;
@@ -17,13 +33,6 @@ public class Subscribe {
         this.userId = userId;
     }
 
-    public int getVideoId() {
-        return videoId;
-    }
-
-    public void setVideoId(int videoId) {
-        this.videoId = videoId;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -33,7 +42,7 @@ public class Subscribe {
         Subscribe subscribe = (Subscribe) o;
 
         if (userId != subscribe.userId) return false;
-        if (videoId != subscribe.videoId) return false;
+        if (seriesName != subscribe.seriesName) return false;
 
         return true;
     }
@@ -41,7 +50,7 @@ public class Subscribe {
     @Override
     public int hashCode() {
         int result = userId;
-        result = 31 * result + videoId;
+        result = 31 * result + seriesName.hashCode();
         return result;
     }
 
@@ -53,11 +62,5 @@ public class Subscribe {
         this.userByUserId = userByUserId;
     }
 
-    public Video getVideoByVideoId() {
-        return videoByVideoId;
-    }
 
-    public void setVideoByVideoId(Video videoByVideoId) {
-        this.videoByVideoId = videoByVideoId;
-    }
 }

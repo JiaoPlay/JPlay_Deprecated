@@ -34,4 +34,6 @@ public interface postDAO {
      * @return 返回需要查找的Post类的对象
      */
     public Post findPostById(int postId);
+
+    public int findMaxPostId();
 }

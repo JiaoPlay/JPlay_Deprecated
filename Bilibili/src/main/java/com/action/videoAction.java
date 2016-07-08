@@ -3,6 +3,7 @@ package com.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.pojo.Video;
+import com.service.userService;
 import com.service.videoService;
 import com.util.timeUtil;
 
@@ -20,23 +21,23 @@ import static org.apache.struts2.ServletActionContext.getServletContext;
  * Created by Admin on 2016/6/27.
  */
 public class videoAction extends baseAction {
+    private userService userService;
     private videoService videoService;
     private String title;
     private String content;
     private String message;
+    private int videoId;
 
-    @Override
-    public String execute() throws Exception  {
+
+    public String upload() throws Exception  {
         System.out.println("Start uploading...");
         try {
             java.util.Map<String,Object> Session = ActionContext.getContext().getSession();
-            if(!Session.containsKey("videoName")) {
+            if(!Session.containsKey("videoName")||!Session.containsKey("username")) {
                 message = "100";
                 return ERROR;
             }
-            Video video = new Video();
-            video.setTitle(title);
-            video.setContent(content);
+            String username = (String)Session.get("username");
             //转码成功与否的标记
             boolean flag = false;
 
@@ -56,12 +57,17 @@ public class videoAction extends baseAction {
             String ffmpegPath = getServletContext().getRealPath("/tools/ffmpeg.exe");
 
             //设置video初始属性
-            video.setVideoId(Integer.parseInt(String.valueOf(videoService.getAllVideoCount())));
+            Video video = new Video();
+            video.setVideoId(videoService.findMaxVideoId()+1);
+            video.setTitle(title);
+            video.setContent(content);
             video.setLink("videos/"+serialName + ".flv");
             video.setIsPass(new Byte("0"));
             video.setTopic("unknown");
             video.setCreateTime(timeUtil.GetCurrentTime());
             video.setLastUpdate(timeUtil.GetCurrentTime());
+            video.setClickCount(0);
+            video.setThumbCount(0);
             //video.setPicture("videos/images/" + serialName + ".jpg");
 
             //转码
@@ -70,6 +76,7 @@ public class videoAction extends baseAction {
             if (flag) {
                 //转码成功,向数据表中添加该视频信息
                 videoService.createVideo(video);
+                videoService.addVideoUper(username,video.getVideoId());
                 Session.remove("videoName");
                 message = "上传成功!";
                 return SUCCESS;
@@ -80,6 +87,11 @@ public class videoAction extends baseAction {
             e.printStackTrace();
             throw new ServletException(e);
         }
+    }
+
+    public String thumbcount(){
+        videoService.videoThumbCount(videoId);
+        return SUCCESS;
     }
 
     public String getTitle() {
@@ -108,5 +120,21 @@ public class videoAction extends baseAction {
 
     public void setVideoService(com.service.videoService videoService) {
         this.videoService = videoService;
+    }
+
+    public int getVideoId() {
+        return videoId;
+    }
+
+    public void setVideoId(int videoId) {
+        this.videoId = videoId;
+    }
+
+    public com.service.userService getUserService() {
+        return userService;
+    }
+
+    public void setUserService(com.service.userService userService) {
+        this.userService = userService;
     }
 }

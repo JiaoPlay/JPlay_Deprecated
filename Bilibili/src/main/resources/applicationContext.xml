@@ -6,13 +6,53 @@
     <!-- File Upload-->
     <bean name="uploadTestAction" class="com.util.uploadHandler" scope="prototype"></bean>
 
+    <!-- Letter -->
+    <bean name="letterDAO" class="com.dao.daoImpl.letterDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Subscribe -->
+    <bean name="subscribeDAO" class="com.dao.daoImpl.subscribeDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Interests Group-User -->
+    <bean name="interestsgroupuserDAO" class="com.dao.daoImpl.interestsgroupuserDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Favourite Group -->
+    <bean name="favouritegroupDAO" class="com.dao.daoImpl.favouritegroupDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Video Favourite -->
+    <bean name="videofavouriteDAO" class="com.dao.daoImpl.videofavouriteDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
     <!-- User -->
     <bean name="userDAO" class="com.dao.daoImpl.userDAOImpl">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
+    <bean name="userroleDAO" class="com.dao.daoImpl.userroleDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
     <bean name="userService" class="com.service.serviceImpl.userServiceImpl">
         <property name="userDAO" ref="userDAO"/>
+        <property name="letterDAO" ref="letterDAO"/>
+        <property name="favouritegroupDAO" ref="favouritegroupDAO"/>
+        <property name="interestsgroupuserDAO" ref="interestsgroupuserDAO"/>
+        <property name="subscribeDAO" ref="subscribeDAO"/>
+        <property name="videofavouriteDAO" ref="videofavouriteDAO"/>
+        <property name="userroleDAO" ref="userroleDAO"/>
+    </bean>
+
+    <!--Category -->
+    <bean name="categoryDAO" class="com.dao.daoImpl.categoryDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
     <!-- Video -->
@@ -20,8 +60,83 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
+    <!-- Video Report -->
+    <bean name="videoreportDAO" class="com.dao.daoImpl.videoreportDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Video Uper -->
+    <bean name="videouperDAO" class="com.dao.daoImpl.videouperDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
     <bean name="videoService" class="com.service.serviceImpl.videoServiceImpl">
+        <property name="userDAO" ref="userDAO"/>
+        <property name="videoreportDAO" ref="videoreportDAO"/>
         <property name="videoDAO" ref="videoDAO"/>
+        <property name="categoryDAO" ref="categoryDAO"/>
+        <property name="videoUperDAO" ref="videouperDAO"/>
+    </bean>
+
+    <!--Comment -->
+    <bean name="commentDAO" class="com.dao.daoImpl.commentDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="usercommentDAO" class="com.dao.daoImpl.usercommentDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="videocommentDAO" class="com.dao.daoImpl.videocommentDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+    <bean name="commentService" class="com.service.serviceImpl.commentServiceImpl">
+        <property name="commentDAO" ref="commentDAO"/>
+        <property name="usercommentDAO" ref="usercommentDAO"/>
+        <property name="videocommentDAO" ref="videocommentDAO"/>
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
+
+    <!-- Reply -->
+    <bean name="replyDAO" class="com.dao.daoImpl.replyDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="commentreplyDAO" class="com.dao.daoImpl.commentreplyDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="userreplyDAO" class="com.dao.daoImpl.userreplyDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="replyService" class="com.service.serviceImpl.replyServiceImpl">
+        <property name="replyDAO" ref="replyDAO"/>
+        <property name="commentreplyDAO" ref="commentreplyDAO"/>
+        <property name="userreplyDAO" ref="userreplyDAO"/>
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
+
+    <!-- Post -->
+    <bean name="postDAO" class="com.dao.daoImpl.postDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="grouppostDAO" class="com.dao.daoImpl.grouppostDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="userpostDAO" class="com.dao.daoImpl.userpostDAOImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean name="postService" class="com.service.serviceImpl.postServiceImpl">
+        <property name="postDAO" ref="postDAO"/>
+        <property name="grouppostDAO" ref="grouppostDAO"/>
+        <property name="userpostDAO" ref="userpostDAO"/>
+        <property name="userDAO" ref="userDAO"/>
     </bean>
 
     <!--<bean name="uploadVideoInfoAction" class="com.action.videoAction" scope="prototype">-->

@@ -13,11 +13,11 @@
                 <column name="user_id" sql-type="int(10)"/>
             </key-property>
         </composite-id>
-        <many-to-one name="roleByRoleId" class="com.pojo.Role">
-            <column name="role_id"/>
-        </many-to-one>
-        <many-to-one name="userByUserId" class="com.pojo.User">
-            <column name="user_id"/>
-        </many-to-one>
+        <!--<many-to-one name="roleByRoleId" class="com.pojo.Role">-->
+            <!--<column name="role_id"/>-->
+        <!--</many-to-one>-->
+        <!--<many-to-one name="userByUserId" class="com.pojo.User">-->
+            <!--<column name="user_id"/>-->
+        <!--</many-to-one>-->
     </class>
 </hibernate-mapping>

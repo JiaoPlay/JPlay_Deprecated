@@ -20,7 +20,7 @@ public class subcategoryDAOImpl extends HibernateDaoSupport implements subcatego
     @Override
     public void createSubcategory(Subcategory subcategory) {
         getHibernateTemplate().save(subcategory);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -29,8 +29,8 @@ public class subcategoryDAOImpl extends HibernateDaoSupport implements subcatego
      */
     @Override
     public void deleteSubcategory(String subcategoryName) {
-        getHibernateTemplate().delete(getHibernateTemplate().load(Subcategory.class,subcategoryName));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().delete((Subcategory)getHibernateTemplate().find("from Subcategory as subcategory where subcategory.subcategoryName=?",subcategoryName).get(0));
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class subcategoryDAOImpl extends HibernateDaoSupport implements subcatego
     @Override
     public void updateSubcategory(Subcategory subcategory) {
         getHibernateTemplate().merge(subcategory);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -50,6 +50,9 @@ public class subcategoryDAOImpl extends HibernateDaoSupport implements subcatego
      */
     @Override
     public Subcategory findSubcategoryByName(String subcategoryName) {
-        return getHibernateTemplate().load(Subcategory.class,subcategoryName);
+        if(getHibernateTemplate().find("from Subcategory where Subcategory.subcategoryName=?",subcategoryName).size()==0)
+            return null;
+        else
+            return (Subcategory)getHibernateTemplate().find("from Subcategory as subcategory where subcategory.subcategoryName=?",subcategoryName).get(0);
     }
 }

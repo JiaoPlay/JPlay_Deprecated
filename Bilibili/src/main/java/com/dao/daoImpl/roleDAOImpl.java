@@ -20,7 +20,7 @@ public class roleDAOImpl extends HibernateDaoSupport implements roleDAO {
     @Override
     public void createRole(Role role) {
         getHibernateTemplate().save(role);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class roleDAOImpl extends HibernateDaoSupport implements roleDAO {
     @Override
     public void deleteRole(int roleId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Role.class,roleId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class roleDAOImpl extends HibernateDaoSupport implements roleDAO {
     @Override
     public void updateRole(Role role) {
         getHibernateTemplate().merge(role);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**

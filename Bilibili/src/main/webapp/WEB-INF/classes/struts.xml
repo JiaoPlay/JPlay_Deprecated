@@ -23,12 +23,32 @@
         </action>
 
         <action name="loginoutAction" class="com.action.logInOutAction" method="execute">
-            <result type="json"></result>
+            <result name="user">index.jsp</result>
+            <result name="admin">index.jsp</result>
+            <result name="error">login.jsp</result>
         </action>
 
-        <action name="uploadVideoInfo" class="com.action.videoAction" method="execute">
+        <!-- 上传视频信息 -->
+        <action name="*VideoInfo" class="com.action.videoAction" method = "{1}">
             <result name="success">/index.jsp</result>
             <result name="error">/upload.jsp</result>
+        </action>
+
+        <!-- 私信 -->
+        <action name="secretLetter" class="com.action.secretletterAction" method="execute">
+            <result name="success">/index.jsp</result>
+            <result name="error">/userLetter.jsp</result>
+        </action>
+
+
+        <!--发布评论 -->
+        <action name="commentAction" class="com.action.videoCommentAction" method="execute">
+            <result name="success">single.jsp</result>
+        </action>
+
+        <!--查看我的上传 -->
+        <action name="myupload" class="com.action.userAction" method="execute">
+            <result name="success">myUpload.jsp</result>
         </action>
     </package>
 

@@ -34,4 +34,6 @@ public interface replyDAO {
      * @return 返回需要查找的Reply类的对象
      */
     public Reply findReplyById(int replyId);
+
+    public int findMaxReplyId();
 }

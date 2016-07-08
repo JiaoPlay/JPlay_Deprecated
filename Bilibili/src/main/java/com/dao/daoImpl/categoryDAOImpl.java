@@ -20,7 +20,7 @@ public class categoryDAOImpl extends HibernateDaoSupport implements categoryDAO 
     @Override
     public void createCategory(Category category) {
         getHibernateTemplate().save(category);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -29,8 +29,8 @@ public class categoryDAOImpl extends HibernateDaoSupport implements categoryDAO 
      */
     @Override
     public void deleteCategory(String categoryName) {
-        getHibernateTemplate().delete(getHibernateTemplate().load(Category.class,categoryName));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().delete((Category)getHibernateTemplate().find("from Category as category where category.categoryName=?",categoryName).get(0));
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class categoryDAOImpl extends HibernateDaoSupport implements categoryDAO 
     @Override
     public void updateCategory(Category category) {
         getHibernateTemplate().merge(category);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -50,6 +50,9 @@ public class categoryDAOImpl extends HibernateDaoSupport implements categoryDAO 
      */
     @Override
     public Category findCategoryByName(String categoryName) {
-        return getHibernateTemplate().load(Category.class,categoryName);
+        if(getHibernateTemplate().find("from Category where Category .categoryName=?",categoryName).size()==0)
+            return null;
+        else
+            return (Category)getHibernateTemplate().find("from Category as category where category.categoryName=?",categoryName).get(0);
     }
 }

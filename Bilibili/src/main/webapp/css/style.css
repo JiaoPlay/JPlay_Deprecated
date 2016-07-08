@@ -29,8 +29,8 @@ html { -webkit-text-size-adjust: none;}
 img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
 
 a{color: #333;font-size: 15px;text-decoration: none;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;}
-a:link, a:visited { color: #ffffcc; text-decoration: none; font-weight: bold;}
-a:active, a:hover { color: #4f9fcf;}
+/*a:link, a:visited { color: #ffffcc; text-decoration: none; font-weight: bold;}
+a:active, a:hover { color: #4f9fcf;}*/
 input:hover,input:active{border: solid;border-color: #4f9fcf}
 
 
@@ -69,6 +69,8 @@ header  ul li a{font-size: 20px;color: #fff;}
 header ul.quick-link {display: inline-block;}
 header ul.quick-link span i {margin-right: 10px;font-size: 18px;}
 header ul.social {float: right;}
+.social a:link,.social a:visited { color: #ffffcc; text-decoration: none; font-weight: bold;}
+.social a:active,.social a:hover { color: #4f9fcf;}
 
 header .logo img{float: left;display: inline-block;}
 header .wrap-header {background-color: #2D323C; padding: 20px 0;color: #fff;}
@@ -85,9 +87,10 @@ header .bottom a{color: #fff;text-decoration: underline;}
 .share {text-align: center;}
 .share .box-share{border: 1px solid #ddd;padding: 20px 0;max-width: 150px;height: 100px;}
 .share .box-share i{font-size: 30px;display: block;}
+.box-share:hover {border: 1px solid black}
 
-.tags {margin: 15px 0;border: 1px solid #ddd;padding: 30px ;}
-.tags a{background: #E73737;padding: 10px;color: #fff;}
+.tags {margin: 15px 0;border: 1px solid #ddd;padding: 30px;background-color:#f4f6f6}
+.tags a{background: lightpink;padding: 10px;color: #fff;}
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
@@ -101,10 +104,22 @@ header .bottom a{color: #fff;text-decoration: underline;}
 /* ---MainContent-Article--- */
 #main-content{margin-top: 10px;}
 #main-content .wrap-content{}
+#main-content a:link, #main-content a:visited { color: #4f9fcf; text-decoration: none; font-weight: bold;}
+#main-content a:active, #main-content a:hover { color: black;}
+
+#main-content .content-bkg
+{
+	background-color:#f4f6f6;
+	border: 1px solid #ddd;
+}
+.content-bkg p{
+	margin-left: 3%;
+}
 
 /*--Header */
 .header {background-color: #fff;padding: 15px 20px;margin-bottom: 15px;border: 1px solid #ddd;}
 .header h2{font-size: 23px;}
+
 /*--LogIn */
 .logIn-content{
 
@@ -303,12 +318,12 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
 /* ---------------------------------------------------------------------------- */
 .wrap-vid{margin-bottom: 20px;}
 .vid-item {position: relative;}
-.vid-name{margin-top: 5px;}
+.vid-name{margin-top: 5px;margin-left: 5%;}
 .vid-name a{font-size: 19px;color: #654E2D;}
 .info {margin: 7px 0 10px;font-size: 14px;}
 .info i{margin-right: 8px;}
-.info span{margin-right: 10px;}
-.info h5, .info a{font-size: 13px;line-height: 1;margin-bottom: 9px;}
+.info span{margin-left: 3%;margin-right: 10px;}
+.info h5, .info a{margin-left: 3%;font-size: 13px;line-height: 1;margin-bottom: 9px;}
 .info a{color: #006EA0;}
 .info a:hover{text-decoration: underline;}
 	
@@ -381,3 +396,21 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
 .navigation{text-align: center;margin-top: 20px;}
 .navigation ul li{display: inline-block;}
 .navigation ul li a{background-color: #fff;border: 1px solid #ddd;padding: 7px 13px;}
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------------  Barrage  ------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.barrage{margin-bottom: 30px;padding: 0 0px;text-align: center}
+.barrage:after, .barrage:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+.barrage .barrage-content{background-color: #fff;padding: 20px;margin-bottom:7%;border: 1px solid #ddd;font-size: 120%}
+.barrage-content label{font-size: 150%;width: 20%;height:6%;vertical-align: middle}
+.barrage-content input{width:50%;height:6%;border:1px solid #eee;}
+.barrage-content button{
+	width:15%;height:6%;
+	border: none;border-radius: 10px;
+	background-color: #2c81ba;color:snow;
+	font-size: 110%;
+}
+
+
+

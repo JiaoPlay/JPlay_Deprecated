@@ -20,7 +20,7 @@ public class tagDAOImpl extends HibernateDaoSupport implements tagDAO {
     @Override
     public void createTag(Tag tag) {
         getHibernateTemplate().save(tag);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class tagDAOImpl extends HibernateDaoSupport implements tagDAO {
     @Override
     public void deleteTag(int tagId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Tag.class,tagId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class tagDAOImpl extends HibernateDaoSupport implements tagDAO {
     @Override
     public void updateTag(Tag tag) {
         getHibernateTemplate().merge(tag);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**

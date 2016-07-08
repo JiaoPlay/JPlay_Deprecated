@@ -20,7 +20,7 @@ import java.util.Collection;
 public class Comment {
     private int commentId;
     private String content;
-    private Serializable createTime;
+    private String createTime;
     private int thumbCount;
     private Collection<CommentReply> commentRepliesByCommentId;
     private Collection<CommentReport> commentReportsByCommentId;
@@ -43,11 +43,11 @@ public class Comment {
         this.content = content;
     }
 
-    public Serializable getCreateTime() {
+    public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Serializable createTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
