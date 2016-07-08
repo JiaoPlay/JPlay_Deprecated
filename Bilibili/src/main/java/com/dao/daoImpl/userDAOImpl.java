@@ -20,7 +20,7 @@ public class userDAOImpl extends HibernateDaoSupport implements userDAO {
     @Override
     public void createUser(User user) {
         getHibernateTemplate().save(user);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class userDAOImpl extends HibernateDaoSupport implements userDAO {
     @Override
     public void deleteUser(int userId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(User.class, userId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class userDAOImpl extends HibernateDaoSupport implements userDAO {
     @Override
     public void updateUser(User user) {
         getHibernateTemplate().merge(user);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**

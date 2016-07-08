@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class SubscribePK implements Serializable {
     private int userId;
-    private int videoId;
+    private String seriesName;
 
     public int getUserId() {
         return userId;
@@ -17,13 +17,6 @@ public class SubscribePK implements Serializable {
         this.userId = userId;
     }
 
-    public int getVideoId() {
-        return videoId;
-    }
-
-    public void setVideoId(int videoId) {
-        this.videoId = videoId;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -33,7 +26,7 @@ public class SubscribePK implements Serializable {
         SubscribePK that = (SubscribePK) o;
 
         if (userId != that.userId) return false;
-        if (videoId != that.videoId) return false;
+        if (seriesName != that.seriesName) return false;
 
         return true;
     }
@@ -41,7 +34,15 @@ public class SubscribePK implements Serializable {
     @Override
     public int hashCode() {
         int result = userId;
-        result = 31 * result + videoId;
+        result = 31 * result + seriesName.hashCode();
         return result;
+    }
+
+    public String getSeriesName() {
+        return seriesName;
+    }
+
+    public void setSeriesName(String seriesName) {
+        this.seriesName = seriesName;
     }
 }

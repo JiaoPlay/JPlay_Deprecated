@@ -15,7 +15,7 @@ public class letterDAOImpl extends HibernateDaoSupport implements letterDAO {
     @Override
     public void createLetter(Letter letter) {
         getHibernateTemplate().save(letter);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -25,7 +25,7 @@ public class letterDAOImpl extends HibernateDaoSupport implements letterDAO {
     @Override
     public void deleteLetter(int letterId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Letter.class,letterId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -35,7 +35,7 @@ public class letterDAOImpl extends HibernateDaoSupport implements letterDAO {
     @Override
     public void updateLetter(Letter letter) {
         getHibernateTemplate().merge(letter);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**

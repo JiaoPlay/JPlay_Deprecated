@@ -16,6 +16,7 @@ public class Video {
     private Time lastUpdate;
     private byte isPass;
     private int clickCount;
+    private int thumbCount;
     private Collection<SeriesVideo> seriesVideosByVideoId;
     private Collection<Subscribe> subscribesByVideoId;
     private Collection<TagVideo> tagVideosByVideoId;
@@ -24,6 +25,14 @@ public class Video {
     private Collection<VideoReport> videoReportsByVideoId;
     private Collection<VideoSubcategory> videoSubcategoriesByVideoId;
     private Collection<VideoUper> videoUpersByVideoId;
+
+    public int getThumbCount() {
+        return thumbCount;
+    }
+
+    public void setThumbCount(int thumbCount) {
+        this.thumbCount = thumbCount;
+    }
 
     public int getVideoId() {
         return videoId;

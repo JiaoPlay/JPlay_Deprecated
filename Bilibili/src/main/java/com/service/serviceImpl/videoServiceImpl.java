@@ -1,7 +1,11 @@
 package com.service.serviceImpl;
 
+
+import com.dao.*;
+import com.pojo.Category;
 import com.pojo.Video;
-import com.dao.videoDAO;
+import com.pojo.VideoReport;
+import com.pojo.VideoUper;
 import com.service.videoService;
 
 import java.util.ArrayList;
@@ -11,7 +15,11 @@ import java.util.List;
  * Created by frank_xiang on 2016/7/4.
  */
 public class videoServiceImpl implements videoService {
+    private userDAO userDAO;
     private videoDAO videoDAO;
+    private categoryDAO categoryDAO;
+    private videoreportDAO videoreportDAO;
+    private videouperDAO videoUperDAO;
 
     @Override
     public void createVideo(Video video) {
@@ -103,10 +111,79 @@ public class videoServiceImpl implements videoService {
         return videoDAO.getAllVideoCount();
     }
 
+    @Override
+    public int findMaxVideoId() {
+        return videoDAO.findMaxVideoId();
+    }
+
+    @Override
+    public Category findCategoryByName(String categoryName) {
+        return categoryDAO.findCategoryByName(categoryName);
+    }
+
+    @Override
+    public void videoThumbCount(int videoId) {
+        Video video = videoDAO.findVideoById(videoId);
+        video.setThumbCount(video.getThumbCount()+1);
+        videoDAO.updateVideo(video);
+    }
+
+    @Override
+    public void videoReport(String username, int videoId) {
+        int userId = userDAO.findUserByUsername(username).getUserId();
+        VideoReport videoReport = new VideoReport();
+        videoReport.setUserId(userId);
+        videoReport.setVideoId(videoId);
+        videoreportDAO.createVideoReport(videoReport);
+    }
+
+    @Override
+    public void addVideoUper(String username, int videoId) {
+        int userId = userDAO.findUserByUsername(username).getUserId();
+        VideoUper videoUper = new VideoUper();
+        videoUper.setUserId(userId);
+        videoUper.setVideoId(videoId);
+        videoUperDAO.createVideoUper(videoUper);
+    }
+
+    @Override
+    public List<Video> showVideoByUper(String username) {
+        int userId = userDAO.findUserByUsername(username).getUserId();
+        return videoDAO.findVideoListByUserId(userId);
+    }
+
     public void setVideoDAO(videoDAO videoDAO) {
         this.videoDAO = videoDAO;
     }
     public videoDAO getVideoDAO(){
         return videoDAO;
+    }
+
+    public void setCategoryDAO(com.dao.categoryDAO categoryDAO) {
+        this.categoryDAO = categoryDAO;
+    }
+
+    public com.dao.videoreportDAO getVideoreportDAO() {
+        return videoreportDAO;
+    }
+
+    public void setVideoreportDAO(com.dao.videoreportDAO videoreportDAO) {
+        this.videoreportDAO = videoreportDAO;
+    }
+
+    public com.dao.userDAO getUserDAO() {
+        return userDAO;
+    }
+
+    public void setUserDAO(com.dao.userDAO userDAO) {
+        this.userDAO = userDAO;
+    }
+
+    public videouperDAO getVideoUperDAO() {
+        return videoUperDAO;
+    }
+
+    public void setVideoUperDAO(videouperDAO videoUperDAO) {
+        this.videoUperDAO = videoUperDAO;
     }
 }

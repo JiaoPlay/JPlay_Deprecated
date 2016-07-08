@@ -20,7 +20,7 @@ public class commentDAOImpl extends HibernateDaoSupport implements commentDAO {
     @Override
     public void createComment(Comment comment) {
         getHibernateTemplate().save(comment);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class commentDAOImpl extends HibernateDaoSupport implements commentDAO {
     @Override
     public void deleteComment(int commentId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Comment.class,commentId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class commentDAOImpl extends HibernateDaoSupport implements commentDAO {
     @Override
     public void updateComment(Comment comment) {
         getHibernateTemplate().merge(comment);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
 
@@ -52,5 +52,20 @@ public class commentDAOImpl extends HibernateDaoSupport implements commentDAO {
     @Override
     public Comment findCommentById(int commentId) {
         return getHibernateTemplate().load(Comment.class,commentId);
+    }
+
+    @Override
+    public int getAllCommentCount() {
+        String hql = "select count(*) from Comment as comment";
+        return Integer.parseInt(String.valueOf(getHibernateTemplate().find(hql).get(0)));
+    }
+
+    @Override
+    public int findMaxCommentId() {
+        String hql = "select max(comment.commentId) as maxinum from Comment as comment";
+        if(getHibernateTemplate().find(hql).get(0)==null)
+            return 0;
+        else
+            return Integer.parseInt(String.valueOf(getHibernateTemplate().find(hql).get(0)));
     }
 }

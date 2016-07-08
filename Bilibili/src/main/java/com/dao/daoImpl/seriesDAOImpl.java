@@ -20,7 +20,7 @@ public class seriesDAOImpl extends HibernateDaoSupport implements seriesDAO {
     @Override
     public void createSeries(Series series) {
         getHibernateTemplate().save(series);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -29,8 +29,8 @@ public class seriesDAOImpl extends HibernateDaoSupport implements seriesDAO {
      */
     @Override
     public void deleteSeries(String seriesName) {
-        getHibernateTemplate().delete(getHibernateTemplate().load(Series.class,seriesName));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().delete((Series)getHibernateTemplate().find("from Series as series where series.seriesName=?",seriesName).get(0));
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class seriesDAOImpl extends HibernateDaoSupport implements seriesDAO {
     @Override
     public void updateSeries(Series series) {
         getHibernateTemplate().merge(series);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -50,6 +50,9 @@ public class seriesDAOImpl extends HibernateDaoSupport implements seriesDAO {
      */
     @Override
     public Series findSeriesByName(String seriesName) {
-        return getHibernateTemplate().load(Series.class,seriesName);
+        if(getHibernateTemplate().find("from Series where Series .seriesName=?",seriesName).size()==0)
+            return null;
+        else
+            return (Series)getHibernateTemplate().find("from Series as series where series.seriesName=?",seriesName).get(0);
     }
 }

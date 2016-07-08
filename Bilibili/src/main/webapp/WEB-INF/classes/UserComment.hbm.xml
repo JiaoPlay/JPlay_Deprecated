@@ -16,11 +16,11 @@
         <property name="isThumb">
             <column name="is_thumb" sql-type="tinyint(1)"/>
         </property>
-        <many-to-one name="userByUserId" class="com.pojo.User">
-            <column name="user_id"/>
-        </many-to-one>
-        <many-to-one name="commentByCommentId" class="com.pojo.Comment">
-            <column name="comment_id"/>
-        </many-to-one>
+        <!--<many-to-one name="userByUserId" class="com.pojo.User">-->
+            <!--<column name="user_id"/>-->
+        <!--</many-to-one>-->
+        <!--<many-to-one name="commentByCommentId" class="com.pojo.Comment">-->
+            <!--<column name="comment_id"/>-->
+        <!--</many-to-one>-->
     </class>
 </hibernate-mapping>

@@ -99,21 +99,21 @@
                     <br/>
                     <!--登陆的主界面 -->
 
-                    <form action = "loginoutAction">
+                    <form action = "loginoutAction.action">
                         <div class="logIn">
                             <h3>账号:</h3>
                             <br/>
                             <div id="login-user-name">
 
                                 <input required autofocus type="text" style="width:80%"
-                                       name="username" ng-model="user.username" placeholder="用户名/邮箱/已验证手机" id="username"/>
+                                       name="username" ng-model="username" placeholder="用户名/邮箱/已验证手机" id="username"/>
                                 <i class="fa fa-envelope-o"></i>
                             </div>
                             <br/>
                             <h3>密码:</h3>
                             <br/>
                             <div id="login-user-password" style="font-size:20px">
-                                <input required type="password" ng-model="user.password" style="width:80%"
+                                <input required type="password" ng-model="password" style="width:80%"
                                        name="password" ng-keypress="$event.which===13&&commit()" id="password"/>
                                 <i class="fa fa-lock"></i>
                             </div>
@@ -304,8 +304,8 @@
     </script>
     <%
 
-        String pageName = pageContext.getRequest().getParameter("pageName");
-
+        //String pageName = pageContext.getRequest().getParameter("pageName");
+        String pageName="223123213";
 //产生随机数，和密码一起生成MD5
         request.getSession().setAttribute("md5RandomKey", String.valueOf(pageName.hashCode()));
     %>

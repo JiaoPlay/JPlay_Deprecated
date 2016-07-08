@@ -20,7 +20,7 @@ public class interestsgroupDAOImpl extends HibernateDaoSupport implements intere
     @Override
     public void createInterestsgroup(Interestsgroup interestsgroup) {
         getHibernateTemplate().save(interestsgroup);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class interestsgroupDAOImpl extends HibernateDaoSupport implements intere
     @Override
     public void deleteInterestsgroup(int interestsgroupId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Interestsgroup.class,interestsgroupId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class interestsgroupDAOImpl extends HibernateDaoSupport implements intere
     @Override
     public void updateInterestsgroup(Interestsgroup interestsgroup) {
         getHibernateTemplate().merge(interestsgroup);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**

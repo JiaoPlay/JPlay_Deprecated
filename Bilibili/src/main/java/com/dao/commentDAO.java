@@ -34,4 +34,13 @@ public interface commentDAO {
      * @return 返回需要查找的Comment类的对象
      */
     public Comment findCommentById(int commentId);
+
+    /**
+     * getAllCommentCount方法实现了查询本地库中所有Comment记录的数目的功能
+     * @return 返回记录条目的总数
+     * @throws Exception
+     */
+    public int getAllCommentCount();
+
+    public int findMaxCommentId();
 }

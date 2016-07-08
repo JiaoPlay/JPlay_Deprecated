@@ -13,11 +13,11 @@
                 <column name="interest_group_id" sql-type="int(10)"/>
             </key-property>
         </composite-id>
-        <many-to-one name="userByUserId" class="com.pojo.User">
-            <column name="user_id"/>
-        </many-to-one>
-        <many-to-one name="interestsgroupByInterestGroupId" class="com.pojo.Interestsgroup">
-            <column name="interest_group_id"/>
-        </many-to-one>
+        <!--<many-to-one name="userByUserId" class="com.pojo.User">-->
+            <!--<column name="user_id"/>-->
+        <!--</many-to-one>-->
+        <!--<many-to-one name="interestsgroupByInterestGroupId" class="com.pojo.Interestsgroup">-->
+            <!--<column name="interest_group_id"/>-->
+        <!--</many-to-one>-->
     </class>
 </hibernate-mapping>
