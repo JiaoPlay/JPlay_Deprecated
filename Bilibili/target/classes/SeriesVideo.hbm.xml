@@ -13,11 +13,11 @@
                 <column name="video_id" sql-type="int(10)"/>
             </key-property>
         </composite-id>
-        <many-to-one name="videoByVideoId" class="com.pojo.Video">
-            <column name="video_id"/>
-        </many-to-one>
-        <many-to-one name="seriesBySeriesName" class="com.pojo.Series">
-            <column name="series_name"/>
-        </many-to-one>
+        <!--<many-to-one name="videoByVideoId" class="com.pojo.Video">-->
+            <!--<column name="video_id"/>-->
+        <!--</many-to-one>-->
+        <!--<many-to-one name="seriesBySeriesName" class="com.pojo.Series">-->
+            <!--<column name="series_name"/>-->
+        <!--</many-to-one>-->
     </class>
 </hibernate-mapping>

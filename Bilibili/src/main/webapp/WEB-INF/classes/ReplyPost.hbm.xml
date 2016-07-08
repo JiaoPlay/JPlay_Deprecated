@@ -16,11 +16,11 @@
         <property name="reason">
             <column name="reason" sql-type="varchar(100)" length="100" not-null="true"/>
         </property>
-        <many-to-one name="userByUserId" class="com.pojo.User">
-            <column name="user_id"/>
-        </many-to-one>
-        <many-to-one name="postByPostId" class="com.pojo.Post">
-            <column name="post_id"/>
-        </many-to-one>
+        <!--<many-to-one name="userByUserId" class="com.pojo.User">-->
+            <!--<column name="user_id"/>-->
+        <!--</many-to-one>-->
+        <!--<many-to-one name="postByPostId" class="com.pojo.Post">-->
+            <!--<column name="post_id"/>-->
+        <!--</many-to-one>-->
     </class>
 </hibernate-mapping>

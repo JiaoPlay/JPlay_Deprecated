@@ -66,6 +66,7 @@
           <element id="library" level="project" name="Maven: xpp3:xpp3_min:1.1.4c" />
           <element id="library" level="project" name="Maven: com.thoughtworks.xstream:xstream-hibernate:1.4.3" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi:3.8" />
+          <element id="library" level="project" name="Maven: junit:junit:3.8.1" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.1.1" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.1" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.5" />

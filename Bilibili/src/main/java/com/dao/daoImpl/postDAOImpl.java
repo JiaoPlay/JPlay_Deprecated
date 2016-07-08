@@ -20,7 +20,7 @@ public class postDAOImpl extends HibernateDaoSupport implements postDAO{
     @Override
     public void createPost(Post post) {
         getHibernateTemplate().save(post);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class postDAOImpl extends HibernateDaoSupport implements postDAO{
     @Override
     public void deletePost(int postId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Post.class, postId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class postDAOImpl extends HibernateDaoSupport implements postDAO{
     @Override
     public void updatePost(Post post) {
         getHibernateTemplate().merge(post);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -51,5 +51,14 @@ public class postDAOImpl extends HibernateDaoSupport implements postDAO{
     @Override
     public Post findPostById(int postId) {
         return  getHibernateTemplate().load(Post.class, postId);
+    }
+
+    @Override
+    public int findMaxPostId() {
+        String hql = "select max(post.postId) as maxinum from Post as post";
+        if( getHibernateTemplate().find(hql).get(0)==null)
+            return 0;
+        else
+            return Integer.parseInt(String.valueOf(getHibernateTemplate().find(hql).get(0)));
     }
 }

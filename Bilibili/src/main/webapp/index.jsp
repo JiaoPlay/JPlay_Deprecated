@@ -1,3 +1,4 @@
+<%@ page import="com.thoughtworks.xstream.mapper.Mapper" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
@@ -53,9 +54,14 @@
                 <div class="row">
                     <a href="index.jsp" class="logo"><img src="images/logo.png" /></a>
                     <ul class="social">
-                        <li><a href="upload.jsp" title="Upload Video" style="color:#ffffdd" ><i class="fa fa-upload"></i>上传</a></li>
+                        <li><a href="upload.jsp" title="Upload Video" ><i class="fa fa-upload"></i>上传</a></li>
+                        <% if(0==1)
+                        {%>
                         <li><a href="login.jsp" title="Log in" style="color:#ffffdd"><i class="fa fa-user"></i>登陆</a></li>
                         <li><a href="register.jsp" title="Register" style="color:#ffffdd"><i class="fa fa-bell"></i>注册</a></li>
+                        <%}else{ %>
+                        <li><a href="userProfile.jsp" title="Profile"><i class="fa fa-renren"></i>个人信息</a></li>
+                        <%} %>
                     </ul>
                 </div>
             </div>

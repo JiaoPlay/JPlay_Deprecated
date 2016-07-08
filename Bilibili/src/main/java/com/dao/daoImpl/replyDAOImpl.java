@@ -20,7 +20,7 @@ public class replyDAOImpl extends HibernateDaoSupport implements replyDAO {
     @Override
     public void createReply(Reply reply) {
         getHibernateTemplate().save(reply);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -30,7 +30,7 @@ public class replyDAOImpl extends HibernateDaoSupport implements replyDAO {
     @Override
     public void deleteReply(int replyId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Reply.class,replyId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -40,7 +40,7 @@ public class replyDAOImpl extends HibernateDaoSupport implements replyDAO {
     @Override
     public void updateReply(Reply reply) {
         getHibernateTemplate().merge(reply);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -51,5 +51,14 @@ public class replyDAOImpl extends HibernateDaoSupport implements replyDAO {
     @Override
     public Reply findReplyById(int replyId) {
         return getHibernateTemplate().load(Reply.class,replyId);
+    }
+
+    @Override
+    public int findMaxReplyId() {
+        String hql = "select max(reply.replyId) as maxinum from Reply as reply";
+        if( getHibernateTemplate().find(hql).get(0)==null)
+            return 0;
+        else
+        return Integer.parseInt(String.valueOf(getHibernateTemplate().find(hql).get(0)));
     }
 }

@@ -1,13 +1,16 @@
 package com.dao.daoImpl;
 
 import com.dao.videoDAO;
-import com.pojo.User;
+import com.pojo.InterestgroupUser;
+import com.pojo.VideoUper;
 import com.pojo.Video;
 import org.apache.lucene.search.Query;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -26,8 +29,7 @@ public class videoDAOImpl extends HibernateDaoSupport implements videoDAO {
     @Override
     public void createVideo(Video video) {
         getHibernateTemplate().save(video);
-        //getHibernateTemplate().save(video);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -37,7 +39,7 @@ public class videoDAOImpl extends HibernateDaoSupport implements videoDAO {
     @Override
     public void deleteVideo(int videoId) {
         getHibernateTemplate().delete(getHibernateTemplate().load(Video.class, videoId));
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -47,7 +49,7 @@ public class videoDAOImpl extends HibernateDaoSupport implements videoDAO {
     @Override
     public void updateVideo(Video video) {
         getHibernateTemplate().merge(video);
-//        getHibernateTemplate().flush();
+        getHibernateTemplate().flush();
     }
 
     /**
@@ -69,6 +71,31 @@ public class videoDAOImpl extends HibernateDaoSupport implements videoDAO {
     public int getAllVideoCount() {
         String hql = "select count(*) from Video as video";
         return Integer.parseInt(String.valueOf(getHibernateTemplate().find(hql).get(0)));
+    }
+
+    @Override
+    public int findMaxVideoId() {
+        String hql = "select max(video.videoId) as maxinum from Video as video";
+        if(getHibernateTemplate().find(hql).get(0)==null)
+            return 0;
+        else
+        return Integer.parseInt(String.valueOf(getHibernateTemplate().find(hql).get(0)));
+    }
+
+    @Override
+    public List<Video> findVideoListByUserId(int userId) {
+        String hql = "select videoId as vid from VideoUper where userId=?";
+        if(getHibernateTemplate().find(hql,userId).size()==0)
+        return null;
+        else
+        {
+            List<Video>result = new ArrayList<Video>();
+            List<Integer>videoIdList= getHibernateTemplate().find(hql,userId);
+            for(int i=0;i<videoIdList.size();i++){
+                result.add((Video)getHibernateTemplate().find("from Video as video where video.videoId=?",videoIdList.get(i)).get(0));
+            }
+            return result;
+        }
     }
 
 

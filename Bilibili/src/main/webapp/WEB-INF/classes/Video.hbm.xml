@@ -32,6 +32,11 @@
         <property name="clickCount">
             <column name="click_count" sql-type="int(10)"/>
         </property>
+
+        <property name="thumbCount">
+            <column name="thumb_count" sql-type="int(10)"/>
+        </property>
+
         <!--<set name="seriesVideosByVideoId" inverse="true">-->
             <!--<key>-->
                 <!--<column name="video_id"/>-->

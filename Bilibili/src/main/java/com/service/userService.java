@@ -12,5 +12,11 @@ public interface userService {
     public User findUserById(int userId);
     public User findUserByUsername(String username);
     public boolean validateUser(String username,String password);
-    public void sendletter(String sender,String sendee, String lettercontent);
+    public boolean validateRegister(String username,String password,String email);
+    public void sendLetter(String sender,String sendee, String lettercontent);
+    public void addInterestsproup(String username,int interestgroupId);
+    public void subscribeSeries(String username, String seriesName);
+    public void addFavouriteGroup(String username);
+    public void addVideoToFavouriteGroup(int videoId,int groupId);
+    public void giveUserRole(String username, int roleId);
 }
